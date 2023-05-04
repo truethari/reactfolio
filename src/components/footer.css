@@ -39,7 +39,10 @@
 	display: flex;
 	right: 0;
 	justify-content: flex-end;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
 	color: #a1a1aa;
+	font-size: 14px;
 }
 
 @media (max-width: 600px) {
