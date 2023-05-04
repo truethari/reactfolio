@@ -1,0 +1,67 @@
+.footer {
+	display: flex;
+	padding-top: 25px;
+	margin-top: 50px;
+	padding-bottom: 25px;
+	align-items: center;
+}
+
+.footer-links {
+	width: 40%;
+	margin-left: -40px;
+}
+
+.footer-nav-link-list {
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-nav-link-item {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	font-weight: bold;
+	font-size: 80%;
+}
+
+.footer-nav-link-list a {
+	text-decoration: none;
+	color: #333;
+}
+
+.footer-nav-link-list a:hover {
+	color: #14b8a6;
+}
+
+.footer-credits {
+	position: absolute;
+	display: flex;
+	right: 0;
+	justify-content: flex-end;
+	color: #a1a1aa;
+}
+
+@media (max-width: 600px) {
+	.footer {
+		flex-direction: column;
+		height: 85px;
+	}
+
+	.footer-links {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+	}
+
+	.footer-nav-link-list {
+		width: 100%;
+	}
+
+	.footer-credits {
+		padding-top: 10px;
+		position: relative;
+		right: auto;
+		justify-content: center;
+	}
+}
