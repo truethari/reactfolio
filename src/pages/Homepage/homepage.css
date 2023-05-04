@@ -36,9 +36,17 @@
 }
 
 .homepage-container {
-	padding-top: 30vh;
+	padding-top: 5vh;
 	height: 100vh;
 	margin: 0;
+}
+
+.homepage-title {
+	color: #27272a;
+	font-family: "Roboto", sans-serif;
+	font-size: 45px;
+	font-weight: 700;
+	width: 50%;
 }
 
 @media (max-width: 600px) {

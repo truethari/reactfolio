@@ -57,7 +57,10 @@ const Homepage = () => {
 					</div>
 
 					<div className="homepage-container">
-						<h1>Homepage</h1>
+						<div className="homepage-title">
+							Full-stack web app and mobile developer, and amateur
+							astronaut.
+						</div>
 					</div>
 				</div>
 			</div>
