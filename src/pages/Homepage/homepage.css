@@ -73,6 +73,15 @@
 	color: #52525b;
 }
 
+.homepage-articles {
+	padding-top: 60px;
+	margin-left: -30px;
+}
+
+.homepage-article {
+	padding-bottom: 5px;
+}
+
 @media (max-width: 600px) {
 	.content-wrapper {
 		max-width: 90%;
@@ -92,5 +101,9 @@
 	.homepage-subtitle {
 		font-size: 20px;
 		width: 100%;
+	}
+
+	.homepage-articles {
+		margin-left: 0px;
 	}
 }

@@ -1,0 +1,56 @@
+.article {
+	width: 50%;
+	mix-blend-mode: normal;
+	border-radius: 20px;
+	opacity: 0.8;
+}
+
+.article:hover {
+	background: #fafafa;
+	opacity: 1;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.article-content {
+	padding: 30px;
+}
+
+.article-date {
+	opacity: 1;
+	color: #afafb7;
+	font-size: 12px;
+	margin-bottom: 1em;
+}
+
+.article-title {
+	opacity: 1;
+	color: #27272a;
+	font-size: 16px;
+	margin-bottom: 1em;
+	font-weight: 700;
+}
+
+.article-description {
+	opacity: 1;
+	color: #52525b;
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+.article-link {
+	opacity: 1;
+	padding-top: 20px;
+	font-size: 15px;
+	font-weight: 700;
+}
+
+.article-link a {
+	color: #33c1b1;
+	text-decoration: none;
+}
+
+@media (max-width: 600px) {
+	.article {
+		width: 100%;
+	}
+}
