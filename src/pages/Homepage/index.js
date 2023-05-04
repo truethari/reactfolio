@@ -1,5 +1,14 @@
 import React, { useState, useEffect } from "react";
 
+import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+	faTwitter,
+	faGithub,
+	faStackOverflow,
+	faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+
 import NavBar from "../../components/navBar";
 import Logo from "./../../components/logo";
 
@@ -60,6 +69,41 @@ const Homepage = () => {
 						<div className="homepage-title">
 							Full-stack web app and mobile developer, and amateur
 							astronaut.
+						</div>
+
+						<div className="homepage-subtitle">
+							I am a backend developer with expertise in Node.js.
+							I have experience in building scalable, secure and
+							reliable web applications using various frameworks
+							and technologies. I enjoy solving complex problems
+							and learning new skills. I am passionate about
+							creating high-quality code that follows best
+							practices and industry standards. I am always
+							looking for new challenges and opportunities to grow
+							as a developer.
+						</div>
+
+						<div className="homepage-socials">
+							<FontAwesomeIcon
+								icon={faTwitter}
+								className="homepage-social-icon"
+							/>
+							<FontAwesomeIcon
+								icon={faGithub}
+								className="homepage-social-icon"
+							/>
+							<FontAwesomeIcon
+								icon={faStackOverflow}
+								className="homepage-social-icon"
+							/>
+							<FontAwesomeIcon
+								icon={faInstagram}
+								className="homepage-social-icon"
+							/>
+							<FontAwesomeIcon
+								icon={faMailBulk}
+								className="homepage-social-icon"
+							/>
 						</div>
 					</div>
 				</div>
