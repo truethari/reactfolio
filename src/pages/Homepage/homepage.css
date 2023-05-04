@@ -1,18 +1,6 @@
-.homepage-container {
-	padding-top: 30vh;
-	height: 100vh;
-	margin: 0;
-}
-
 .page-content {
 	background-color: white;
 	position: relative;
-}
-
-.content-wrapper {
-	max-width: 70%;
-	margin: 0 auto;
-	padding: 0 20px;
 }
 
 .page-content:before,
@@ -21,7 +9,7 @@
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	width: 10%;
+	width: 11%;
 	background-color: #fafafa;
 	border: 1px solid #f4f4f5;
 }
@@ -32,6 +20,25 @@
 
 .page-content:after {
 	right: 0;
+}
+
+.logo-container {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	padding-top: 130px;
+}
+
+.content-wrapper {
+	max-width: 65%;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.homepage-container {
+	padding-top: 30vh;
+	height: 100vh;
+	margin: 0;
 }
 
 @media (max-width: 600px) {
