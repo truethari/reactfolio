@@ -50,7 +50,7 @@ const Homepage = () => {
 		zIndex: 999,
 		border: stayLogo ? "1px solid white" : "none",
 		borderRadius: stayLogo ? "50%" : "none",
-		boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.25)",
+		boxShadow: stayLogo ? "0px 4px 10px rgba(0, 0, 0, 0.25)" : "none",
 	};
 
 	return (
