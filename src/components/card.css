@@ -1,29 +1,27 @@
 .card {
-	width: 100%;
 	mix-blend-mode: normal;
 	border-radius: 20px;
 	outline: 2px solid #f4f4f5;
 }
 
 .card-container {
-	padding: 40px;
+	padding: 30px;
 	padding-bottom: 5px;
 }
 
 .card-header {
 	display: flex;
 	align-items: center;
-	height: 30px;
 }
 
 .card-icon {
-	font-size: 20px;
+	font-size: 15px;
 	color: #a1a1aa;
 }
 
 .card-title {
 	color: #52525b;
-	font-size: 15px;
+	font-size: 14px;
 	padding-left: 20px;
 	font-weight: 650;
 }
