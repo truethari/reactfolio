@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./logo.css";
+import "./styles/logo.css";
 
 const Logo = (props) => {
 	const { width } = props;

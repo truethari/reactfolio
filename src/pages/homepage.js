@@ -9,13 +9,13 @@ import {
 	faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
-import NavBar from "../../components/navBar";
-import Logo from "./../../components/logo";
-import Article from "../../components/article";
-import Works from "./works";
-import Footer from "../../components/footer";
+import Logo from "../components/common/logo";
+import Footer from "../components/common/footer";
+import NavBar from "../components/common/navBar";
+import Article from "../components/homepage/article";
+import Works from "../components/homepage/works";
 
-import "./homepage.css";
+import "./styles/homepage.css";
 
 const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
