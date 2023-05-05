@@ -59,9 +59,8 @@ const Homepage = () => {
 	return (
 		<React.Fragment>
 			<div className="page-content">
+				<NavBar />
 				<div className="content-wrapper">
-					<NavBar />
-
 					<div className="logo-container">
 						<div style={logoStyle}>
 							<Logo width={logoSize} />
