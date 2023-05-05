@@ -74,7 +74,12 @@
 	color: #52525b;
 }
 
+.homepage-after-title {
+	display: flex;
+}
+
 .homepage-articles {
+	flex-basis: 700px;
 	padding-top: 60px;
 	margin-left: -30px;
 }
@@ -84,10 +89,8 @@
 }
 
 .homepage-works {
-	position: absolute;
-	bottom: 200px;
-	right: 300px;
-	width: 470px;
+	flex-basis: 700px;
+	padding-top: 70px;
 }
 
 .homepage-footer {

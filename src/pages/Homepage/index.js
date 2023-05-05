@@ -108,28 +108,30 @@ const Homepage = () => {
 							/>
 						</div>
 
-						<div className="homepage-articles">
-							<div className="homepage-article">
-								<Article
-									date="September 1, 2020"
-									title="How to build a REST API with Node.js and Express"
-									description="Learn how to build a REST API with Node.js and Express"
-									link="https://www.google.com"
-								/>
+						<div className="homepage-after-title">
+							<div className="homepage-articles">
+								<div className="homepage-article">
+									<Article
+										date="September 1, 2020"
+										title="How to build a REST API with Node.js and Express"
+										description="Learn how to build a REST API with Node.js and Express"
+										link="https://www.google.com"
+									/>
+								</div>
+								<div className="homepage-article">
+									<Article
+										date="September 1, 2020"
+										title="How to build a REST API with Node.js and Express"
+										description="Learn how to build a REST API with Node.js and Express"
+										link="https://www.google.com"
+										className="homepage-article"
+									/>
+								</div>
 							</div>
-							<div className="homepage-article">
-								<Article
-									date="September 1, 2020"
-									title="How to build a REST API with Node.js and Express"
-									description="Learn how to build a REST API with Node.js and Express"
-									link="https://www.google.com"
-									className="homepage-article"
-								/>
-							</div>
-						</div>
 
-						<div className="homepage-works">
-							<Works />
+							<div className="homepage-works">
+								<Works />
+							</div>
 						</div>
 
 						<div className="homepage-footer">
