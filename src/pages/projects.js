@@ -10,7 +10,7 @@ const Projects = () => {
 				<NavBar />
 				<div className="content-wrapper">
 					<div className="projects-container">
-						<div className="projects-footer">
+						<div className="page-footer">
 							<Footer />
 						</div>
 					</div>

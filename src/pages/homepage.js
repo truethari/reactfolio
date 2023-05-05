@@ -61,7 +61,7 @@ const Homepage = () => {
 			<div className="page-content">
 				<NavBar />
 				<div className="content-wrapper">
-					<div className="logo-container">
+					<div className="homepage-logo-container">
 						<div style={logoStyle}>
 							<Logo width={logoSize} />
 						</div>
@@ -134,7 +134,7 @@ const Homepage = () => {
 							</div>
 						</div>
 
-						<div className="homepage-footer">
+						<div className="page-footer">
 							<Footer />
 						</div>
 					</div>
