@@ -6,8 +6,12 @@
 	align-items: center;
 }
 
+.footer-links,
+.footer-credits {
+	flex-basis: 50%;
+}
+
 .footer-links {
-	width: 40%;
 	margin-left: -40px;
 }
 
@@ -34,15 +38,12 @@
 	color: #14b8a6;
 }
 
-.footer-credits {
-	position: absolute;
-	display: flex;
-	right: 0;
-	justify-content: flex-end;
+.footer-credits-text {
 	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
 		"Lucida Sans", Arial, sans-serif;
 	color: #a1a1aa;
 	font-size: 14px;
+	text-align: right;
 }
 
 @media (max-width: 600px) {
