@@ -36,6 +36,8 @@
 }
 
 .homepage-container {
+	display: flex;
+	flex-direction: column;
 	padding-top: 5vh;
 	height: 100%;
 	margin: 0;
@@ -80,6 +82,13 @@
 
 .homepage-article {
 	padding-bottom: 5px;
+}
+
+.homepage-works {
+	position: absolute;
+	bottom: 200px;
+	right: 300px;
+	width: 470px;
 }
 
 .homepage-footer {

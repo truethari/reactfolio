@@ -12,6 +12,7 @@ import {
 import NavBar from "../../components/navBar";
 import Logo from "./../../components/logo";
 import Article from "../../components/article";
+import Works from "./works";
 import Footer from "../../components/footer";
 
 import "./homepage.css";
@@ -126,6 +127,10 @@ const Homepage = () => {
 									className="homepage-article"
 								/>
 							</div>
+						</div>
+
+						<div className="homepage-works">
+							<Works />
 						</div>
 
 						<div className="homepage-footer">
