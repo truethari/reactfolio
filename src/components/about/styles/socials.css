@@ -1,0 +1,30 @@
+.social,
+.email-wrapper {
+	display: flex;
+	align-items: center;
+	padding-bottom: 20px;
+}
+
+.social-icon {
+	font-size: 15px;
+	color: #52525b;
+}
+
+.social-text {
+	color: #52525b;
+	padding-left: 20px;
+	font-weight: 600;
+	font-size: 14px;
+}
+
+.email::before {
+	content: "";
+	display: block;
+	padding-top: 20px;
+	border-top: 3px solid #f4f4f5;
+	margin-top: 20px;
+}
+
+.email-wrapper {
+	padding-top: 20px;
+}
