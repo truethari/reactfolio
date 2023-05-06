@@ -68,12 +68,12 @@ const Homepage = () => {
 					</div>
 
 					<div className="homepage-container">
-						<div className="homepage-title">
+						<div className="title homepage-title">
 							Full-stack web and mobile app developer, and amateur
 							astronaut.
 						</div>
 
-						<div className="homepage-subtitle">
+						<div className="subtitle homepage-subtitle">
 							I am a backend developer with expertise in Node.js.
 							I have experience in building scalable, secure and
 							reliable web applications using various frameworks

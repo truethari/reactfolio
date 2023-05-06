@@ -44,6 +44,25 @@
 	margin: 0 auto;
 }
 
+.title {
+	color: #27272a;
+	font-family: "Roboto", sans-serif;
+	font-size: 45px;
+	font-weight: 700;
+	width: 70%;
+}
+
+.subtitle {
+	padding-top: 10px;
+	color: #52525b;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+		sans-serif;
+	font-size: 16px;
+	line-height: 28px;
+	width: 70%;
+}
+
 .page-footer {
 	position: relative;
 }
@@ -68,6 +87,10 @@
 	.page-content:before,
 	.page-content:after {
 		display: none;
+	}
+
+	.title {
+		width: 100%;
 	}
 
 	.page-footer::before {
