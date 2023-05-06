@@ -6,6 +6,7 @@
 
 .about-logo {
 	display: flex;
+	position: fixed;
 	border: 1px solid white;
 	border-radius: 50%;
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -17,7 +18,7 @@
 	flex-direction: column;
 	height: 100%;
 	margin: 0;
-	padding-top: 175px;
+	padding-top: 120px;
 }
 
 .about-main {
@@ -60,4 +61,10 @@
 .about-socials {
 	padding-top: 50px;
 	padding-bottom: 50px;
+}
+
+@media (max-width: 600px) {
+	.about-container {
+		padding-top: 60px;
+	}
 }
