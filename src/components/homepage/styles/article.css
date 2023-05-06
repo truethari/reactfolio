@@ -1,28 +1,28 @@
-.article {
+.homepage-article {
 	width: 90%;
 	mix-blend-mode: normal;
 	border-radius: 20px;
 	opacity: 0.8;
 }
 
-.article:hover {
+.homepage-article:hover {
 	background: #fafafa;
 	opacity: 1;
 	transition: background-color 0.3s ease-in-out;
 }
 
-.article-content {
+.homepage-article-content {
 	padding: 30px;
 }
 
-.article-date {
+.homepage-article-date {
 	opacity: 1;
 	color: #afafb7;
 	font-size: 12px;
 	margin-bottom: 1em;
 }
 
-.article-title {
+.homepage-article-title {
 	opacity: 1;
 	color: #27272a;
 	font-size: 16px;
@@ -30,27 +30,27 @@
 	font-weight: 700;
 }
 
-.article-description {
+.homepage-article-description {
 	opacity: 1;
 	color: #52525b;
 	font-size: 12px;
 	line-height: 1.5;
 }
 
-.article-link {
+.homepage-article-link {
 	opacity: 1;
 	padding-top: 20px;
 	font-size: 15px;
 	font-weight: 700;
 }
 
-.article-link a {
+.homepage-article-link a {
 	color: #33c1b1;
 	text-decoration: none;
 }
 
 @media (max-width: 600px) {
-	.article {
+	.homepage-article {
 		width: 100%;
 	}
 }

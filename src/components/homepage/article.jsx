@@ -11,14 +11,16 @@ const Article = (props) => {
 
 	return (
 		<React.Fragment>
-			<div className="article">
-				<div className="article-content">
-					<div className="article-date">
+			<div className="homepage-article">
+				<div className="homepage-article-content">
+					<div className="homepage-article-date">
 						|&nbsp;&nbsp;&nbsp;{date}
 					</div>
-					<div className="article-title">{title}</div>
-					<div className="article-description">{description}</div>
-					<div className="article-link">
+					<div className="homepage-article-title">{title}</div>
+					<div className="homepage-article-description">
+						{description}
+					</div>
+					<div className="homepage-article-link">
 						<Link to={link}>
 							Read article{" "}
 							<FontAwesomeIcon
