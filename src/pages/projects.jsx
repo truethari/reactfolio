@@ -3,9 +3,7 @@ import React, { useEffect } from "react";
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
-import Project from "../components/projects/project";
-
-import INFO from "../data/user";
+import AllProjects from "../components/projects/allProjects";
 
 import "./styles/projects.css";
 
@@ -44,17 +42,7 @@ const Projects = () => {
 						</div>
 
 						<div className="projects-list">
-							{INFO.projects.map((project) => (
-								<div className="projects-project">
-									<Project
-										logo={project.logo}
-										title={project.title}
-										description={project.description}
-										linkText={project.linkText}
-										link={project.link}
-									/>
-								</div>
-							))}
+							<AllProjects />
 						</div>
 					</div>
 					<div className="page-footer">
