@@ -1,15 +1,26 @@
 import React from "react";
-import { useNavigate, useParams, Link } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+import styled from "styled-components";
 
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 
+import myArticles from "../data/articles";
+
 import "./styles/readArticle.css";
+
+let ArticleStyle = styled.div``;
 
 const ReadArticle = () => {
 	const navigate = useNavigate();
 	let { slug } = useParams();
+
+	const article = myArticles[slug - 1];
+
+	ArticleStyle = styled.div`
+		${article().style}
+	`;
 
 	return (
 		<React.Fragment>
@@ -36,31 +47,16 @@ const ReadArticle = () => {
 						<div className="read-article-wrapper">
 							<div className="read-article-date-container">
 								<div className="read-article-date">
-									May 6, 2023
+									{article().date}
 								</div>
 							</div>
 
 							<div className="title read-article-title">
-								How to build a REST API with Node.js and Express
+								{article().title}
 							</div>
 
 							<div className="read-article-body">
-								Lorem markdownum, bracchia in redibam! Terque
-								unda puppi nec, linguae posterior in utraque
-								respicere candidus Mimasque formae; quae
-								conantem cervice. Parcite variatus, redolentia
-								adeunt. Tyrioque dies, naufraga sua adit
-								partibus celanda torquere temptata, erit maneat
-								et ramos, iam ait dominari potitus! Tibi litora
-								matremque fumantia condi radicibus opusque. Deus
-								feram verumque, fecit, ira tamen, terras per
-								alienae victum. Mutantur levitate quas ubi arcum
-								ripas oculos abest. Adest commissaque victae in
-								gemitus nectareis ire diva dotibus ora, et findi
-								huic invenit; fatis? Fractaque dare
-								superinposita nimiumque simulatoremque sanguine,
-								at voce aestibus diu! Quid veterum hausit tu nil
-								utinam paternos ima, commentaque.
+								<ArticleStyle>{article().body}</ArticleStyle>
 							</div>
 						</div>
 					</div>

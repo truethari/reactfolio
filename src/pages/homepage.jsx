@@ -15,6 +15,8 @@ import NavBar from "../components/common/navBar";
 import Article from "../components/homepage/article";
 import Works from "../components/homepage/works";
 
+import myArticles from "../data/articles";
+
 import "./styles/homepage.css";
 
 const Homepage = () => {
@@ -110,23 +112,20 @@ const Homepage = () => {
 
 						<div className="homepage-after-title">
 							<div className="homepage-articles">
-								<div className="homepage-article">
-									<Article
-										date="September 1, 2020"
-										title="How to build a REST API with Node.js and Express"
-										description="Learn how to build a REST API with Node.js and Express"
-										link="https://www.google.com"
-									/>
-								</div>
-								<div className="homepage-article">
-									<Article
-										date="September 1, 2020"
-										title="How to build a REST API with Node.js and Express"
-										description="Learn how to build a REST API with Node.js and Express"
-										link="https://www.google.com"
+								{myArticles.map((article, index) => (
+									<div
 										className="homepage-article"
-									/>
-								</div>
+										key={(index + 1).toString()}
+									>
+										<Article
+											key={(index + 1).toString()}
+											date={article().date}
+											title={article().title}
+											description={article().description}
+											link={"/article/" + (index + 1)}
+										/>
+									</div>
+								))}
 							</div>
 
 							<div className="homepage-works">

@@ -5,6 +5,8 @@ import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 import Article from "../components/articles/article";
 
+import myArticles from "../data/articles";
+
 import "./styles/articles.css";
 
 const Articles = () => {
@@ -33,30 +35,20 @@ const Articles = () => {
 
 						<div className="articles-container">
 							<div className="articles-wrapper">
-								<div className="articles-article">
-									<Article
-										date={"May 6, 2023"}
-										title={
-											"How to build a REST API with Node.js and Express"
-										}
-										description={
-											"How to build a REST API with Node.js and Express How to build a REST API with Node.js and Express"
-										}
-										link="/article/1"
-									/>
-								</div>
-								<div className="articles-article">
-									<Article
-										date={"January 6, 2023"}
-										title={
-											"How to build a REST API with Node.js and Express"
-										}
-										description={
-											"How to build a REST API with Node.js and Express How to build a REST API with Node.js and Express How to build a REST API with Node.js and Express How to build a REST API with Node.js and Express"
-										}
-										link="/article/2"
-									/>
-								</div>
+								{myArticles.map((article, index) => (
+									<div
+										className="articles-article"
+										key={(index + 1).toString()}
+									>
+										<Article
+											key={(index + 1).toString()}
+											date={article().date}
+											title={article().title}
+											description={article().description}
+											link={"/article/" + (index + 1)}
+										/>
+									</div>
+								))}
 							</div>
 						</div>
 

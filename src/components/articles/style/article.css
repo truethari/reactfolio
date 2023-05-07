@@ -13,6 +13,7 @@
 
 .article-right-side {
 	flex-basis: 80%;
+	min-width: 700px;
 	mix-blend-mode: normal;
 	border-radius: 20px;
 	opacity: 0.8;
