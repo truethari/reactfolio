@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
@@ -8,6 +8,10 @@ import Socials from "../components/about/socials";
 import "./styles/about.css";
 
 const About = () => {
+	useEffect(() => {
+		document.title = "About";
+	}, []);
+
 	return (
 		<React.Fragment>
 			<div className="page-content">

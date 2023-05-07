@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import styled from "styled-components";
 
@@ -17,6 +17,10 @@ const ReadArticle = () => {
 	let { slug } = useParams();
 
 	const article = myArticles[slug - 1];
+
+	useEffect(() => {
+		document.title = article().title;
+	}, [article]);
 
 	ArticleStyle = styled.div`
 		${article().style}

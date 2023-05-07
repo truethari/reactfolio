@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
@@ -8,6 +8,10 @@ import Project from "../components/projects/project";
 import "./styles/projects.css";
 
 const Projects = () => {
+	useEffect(() => {
+		document.title = "Projects";
+	}, []);
+
 	return (
 		<React.Fragment>
 			<div className="page-content">

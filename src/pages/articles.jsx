@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
@@ -10,6 +10,10 @@ import myArticles from "../data/articles";
 import "./styles/articles.css";
 
 const Articles = () => {
+	useEffect(() => {
+		document.title = "Articles";
+	}, []);
+
 	return (
 		<React.Fragment>
 			<div className="page-content">
