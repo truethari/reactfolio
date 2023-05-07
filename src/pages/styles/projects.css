@@ -24,7 +24,11 @@
 .projects-list {
 	display: flex;
 	flex-wrap: wrap;
+	align-items: stretch;
 	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-left: -35px;
+	margin-right: -35px;
 }
 
 .projects-project {

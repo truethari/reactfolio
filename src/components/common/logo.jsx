@@ -1,5 +1,7 @@
 import React from "react";
 
+import INFO from "../../data/user";
+
 import "./styles/logo.css";
 
 const Logo = (props) => {
@@ -7,7 +9,12 @@ const Logo = (props) => {
 
 	return (
 		<React.Fragment>
-			<img src="../logo.png" alt="logo" className="logo" width={width} />
+			<img
+				src={INFO.main.logo}
+				alt="logo"
+				className="logo"
+				width={width}
+			/>
 		</React.Fragment>
 	);
 };

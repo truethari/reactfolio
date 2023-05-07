@@ -1,8 +1,12 @@
 .social,
 .email-wrapper {
 	display: flex;
-	align-items: center;
 	padding-bottom: 20px;
+}
+
+.social a,
+.email-wrapper a {
+	text-decoration: none;
 }
 
 .social-icon {
@@ -12,7 +16,8 @@
 
 .social-text {
 	color: #52525b;
-	padding-left: 20px;
+	padding-left: 30px;
+	margin-top: -20px;
 	font-weight: 600;
 	font-size: 14px;
 }

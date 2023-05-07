@@ -15,6 +15,7 @@ import NavBar from "../components/common/navBar";
 import Article from "../components/homepage/article";
 import Works from "../components/homepage/works";
 
+import INFO from "../data/user";
 import myArticles from "../data/articles";
 
 import "./styles/homepage.css";
@@ -75,43 +76,64 @@ const Homepage = () => {
 
 					<div className="homepage-container">
 						<div className="title homepage-title">
-							Full-stack web and mobile app developer, and amateur
-							astronaut.
+							{INFO.homepage.title}
 						</div>
 
 						<div className="subtitle homepage-subtitle">
-							I am a backend developer with expertise in Node.js.
-							I have experience in building scalable, secure and
-							reliable web applications using various frameworks
-							and technologies. I enjoy solving complex problems
-							and learning new skills. I am passionate about
-							creating high-quality code that follows best
-							practices and industry standards. I am always
-							looking for new challenges and opportunities to grow
-							as a developer.
+							{INFO.homepage.description}
 						</div>
 
 						<div className="homepage-socials">
-							<FontAwesomeIcon
-								icon={faTwitter}
-								className="homepage-social-icon"
-							/>
-							<FontAwesomeIcon
-								icon={faGithub}
-								className="homepage-social-icon"
-							/>
-							<FontAwesomeIcon
-								icon={faStackOverflow}
-								className="homepage-social-icon"
-							/>
-							<FontAwesomeIcon
-								icon={faInstagram}
-								className="homepage-social-icon"
-							/>
-							<FontAwesomeIcon
-								icon={faMailBulk}
-								className="homepage-social-icon"
-							/>
+							<a
+								href={INFO.socials.twitter}
+								target="_blank"
+								rel="noreferrer"
+							>
+								<FontAwesomeIcon
+									icon={faTwitter}
+									className="homepage-social-icon"
+								/>
+							</a>
+							<a
+								href={INFO.socials.github}
+								target="_blank"
+								rel="noreferrer"
+							>
+								<FontAwesomeIcon
+									icon={faGithub}
+									className="homepage-social-icon"
+								/>
+							</a>
+							<a
+								href={INFO.socials.stackoverflow}
+								target="_blank"
+								rel="noreferrer"
+							>
+								<FontAwesomeIcon
+									icon={faStackOverflow}
+									className="homepage-social-icon"
+								/>
+							</a>
+							<a
+								href={INFO.socials.instagram}
+								target="_blank"
+								rel="noreferrer"
+							>
+								<FontAwesomeIcon
+									icon={faInstagram}
+									className="homepage-social-icon"
+								/>
+							</a>
+							<a
+								href={`mailto:${INFO.main.email}`}
+								target="_blank"
+								rel="noreferrer"
+							>
+								<FontAwesomeIcon
+									icon={faMailBulk}
+									className="homepage-social-icon"
+								/>
+							</a>
 						</div>
 
 						<div className="homepage-after-title">

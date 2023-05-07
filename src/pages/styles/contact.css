@@ -13,10 +13,21 @@
 	top: 4vh;
 }
 
+.contact-subtitle {
+	width: 100% !important;
+}
+
 .contact-container {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
 	margin: 0;
 	padding-top: 120px;
+}
+
+.contact-socials {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: -70px;
 }

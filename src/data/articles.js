@@ -2,9 +2,10 @@ import React from "react";
 
 function article_1() {
 	return {
-		date: "21 January 2023",
-		title: "Article 1",
-		description: "This is the description of article 1",
+		date: "7 May 2023",
+		title: "The Benefits of Cloud Computing",
+		description:
+			"Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
 		style: `
 				.article-content {
 					display: flex;
@@ -34,9 +35,10 @@ function article_1() {
 
 function article_2() {
 	return {
-		date: "21 January 2023",
-		title: "Article 2",
-		description: "This is the description of article 2",
+		date: "7 May 2023",
+		title: "Artificial Intelligence in Healthcare",
+		description:
+			"AI is transforming the healthcare industry, from improving patient outcomes to streamlining operations. Discover the latest applications of this game-changing technology.",
 		style: ``,
 		body: (
 			<React.Fragment>

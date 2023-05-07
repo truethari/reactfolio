@@ -5,6 +5,7 @@ import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 import Article from "../components/articles/article";
 
+import INFO from "../data/user";
 import myArticles from "../data/articles";
 
 import "./styles/articles.css";
@@ -27,14 +28,11 @@ const Articles = () => {
 
 					<div className="articles-main-container">
 						<div className="title articles-title">
-							I'm passionate about pushing the boundaries of
-							what's possible and inspiring the next generation of
-							innovators.
+							{INFO.articles.title}
 						</div>
 
 						<div className="subtitle articles-subtitle">
-							Chronological collection of my long-form thoughts on
-							programming, leadership, product design, and more.
+							{INFO.articles.description}
 						</div>
 
 						<div className="articles-container">
@@ -55,10 +53,9 @@ const Articles = () => {
 								))}
 							</div>
 						</div>
-
-						<div className="page-footer">
-							<Footer />
-						</div>
+					</div>
+					<div className="page-footer">
+						<Footer />
 					</div>
 				</div>
 			</div>

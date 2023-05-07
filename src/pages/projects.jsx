@@ -5,6 +5,8 @@ import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 import Project from "../components/projects/project";
 
+import INFO from "../data/user";
+
 import "./styles/projects.css";
 
 const Projects = () => {
@@ -42,54 +44,21 @@ const Projects = () => {
 						</div>
 
 						<div className="projects-list">
-							<div className="projects-project">
-								<Project
-									logo={
-										"https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png"
-									}
-									title="Portfolio"
-									description="This website is a portfolio of my work and a place for me to share my thoughts and ideas."
-									linkText="View Project"
-									link="https://github.com"
-								/>
-							</div>
-							<div className="projects-project">
-								<Project
-									logo={
-										"https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png"
-									}
-									title="Portfolio"
-									description="This website is a portfolio of my work and a place for me to share my thoughts and ideas."
-									linkText="View Project"
-									link="https://github.com"
-								/>
-							</div>
-							<div className="projects-project">
-								<Project
-									logo={
-										"https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png"
-									}
-									title="Portfolio"
-									description="This website is a portfolio of my work and a place for me to share my thoughts and ideas."
-									linkText="View Project"
-									link="https://github.com"
-								/>
-							</div>
-							<div className="projects-project">
-								<Project
-									logo={
-										"https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png"
-									}
-									title="Portfolio"
-									description="This website is a portfolio of my work and a place for me to share my thoughts and ideas."
-									linkText="View Project"
-									link="https://github.com"
-								/>
-							</div>
+							{INFO.projects.map((project) => (
+								<div className="projects-project">
+									<Project
+										logo={project.logo}
+										title={project.title}
+										description={project.description}
+										linkText={project.linkText}
+										link={project.link}
+									/>
+								</div>
+							))}
 						</div>
-						<div className="page-footer">
-							<Footer />
-						</div>
+					</div>
+					<div className="page-footer">
+						<Footer />
 					</div>
 				</div>
 			</div>
