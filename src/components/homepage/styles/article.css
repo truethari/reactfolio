@@ -1,3 +1,5 @@
+@import "../../../data/styles.css";
+
 .homepage-article {
 	width: 90%;
 	mix-blend-mode: normal;
@@ -17,14 +19,14 @@
 
 .homepage-article-date {
 	opacity: 1;
-	color: #afafb7;
+	color: var(--tertiary-color);
 	font-size: 12px;
 	margin-bottom: 1em;
 }
 
 .homepage-article-title {
 	opacity: 1;
-	color: #27272a;
+	color: var(--primary-color);
 	font-size: 16px;
 	margin-bottom: 1em;
 	font-weight: 700;
@@ -32,7 +34,7 @@
 
 .homepage-article-description {
 	opacity: 1;
-	color: #52525b;
+	color: var(--secondary-color);
 	font-size: 12px;
 	line-height: 1.5;
 }
@@ -45,7 +47,7 @@
 }
 
 .homepage-article-link a {
-	color: #33c1b1;
+	color: var(--link-color);
 	text-decoration: none;
 }
 

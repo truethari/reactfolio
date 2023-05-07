@@ -1,3 +1,5 @@
+@import "../../../data/styles.css";
+
 .article {
 	display: flex;
 }
@@ -29,7 +31,7 @@
 .article-date {
 	padding-top: 30px;
 	font-size: 15px;
-	color: #a7a7af;
+	color: var(--tertiary-color);
 }
 
 .article-title {
@@ -41,7 +43,7 @@
 .article-description {
 	padding-top: 10px;
 	font-size: 12px;
-	color: #52525b;
+	color: var(--secondary-color);
 	font-weight: 480;
 	line-height: 25px;
 }
@@ -49,7 +51,7 @@
 .article-link {
 	padding-top: 10px;
 	font-size: 14px;
-	color: #14b8a6;
+	color: var(--link-color);
 	font-weight: 700;
 }
 

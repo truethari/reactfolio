@@ -1,3 +1,5 @@
+@import "../../data/styles.css";
+
 .read-article-logo-container {
 	display: flex;
 	justify-content: left;
@@ -35,16 +37,20 @@
 
 .read-article-wrapper {
 	width: 80%;
+	padding-top: 30px;
 }
 
 .read-article-date-container {
-	border-left: 1px solid #d6d6da;
-	color: #d6d6da;
-	font-size: 15px;
+	border-left: 2px solid var(--quaternary-color);
+	color: var(--tertiary-color);
+	font-size: 16 px;
+	align-items: center;
+	height: 22px;
 }
 
 .read-article-date {
-	padding-left: 10px;
+	font-family: var(--primary-font);
+	padding-left: 15px;
 }
 
 .read-article-title {

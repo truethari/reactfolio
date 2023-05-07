@@ -1,3 +1,5 @@
+@import "/src/data/styles.css";
+
 ::-webkit-scrollbar {
 	width: 10px;
 }
@@ -47,8 +49,8 @@
 }
 
 .title {
-	color: #27272a;
-	font-family: "Roboto", sans-serif;
+	color: var(--primary-color);
+	font-family: var(--secondary-font);
 	font-size: 45px;
 	font-weight: 700;
 	width: 70%;
@@ -56,13 +58,11 @@
 
 .subtitle {
 	padding-top: 10px;
-	color: #52525b;
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-		Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-		sans-serif;
+	color: var(--secondary-color);
 	font-size: 16px;
 	line-height: 28px;
 	width: 70%;
+	margin-top: 25px;
 }
 
 .page-footer {
@@ -74,7 +74,7 @@
 	position: absolute;
 	left: 0;
 	right: 0;
-	border-top: 2px solid #52525b;
+	border-top: 2px solid var(--tertiary-color);
 }
 
 @media (max-width: 1270px) {
@@ -120,16 +120,4 @@
 	.subtitle {
 		width: 100%;
 	}
-}
-
-@media (max-width: 768px) {
-}
-
-@media (max-width: 414px) {
-}
-
-@media (max-width: 375px) {
-}
-
-@media (max-width: 320px) {
 }

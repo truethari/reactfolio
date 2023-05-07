@@ -1,3 +1,4 @@
+@import "../../../data/styles.css";
 .social,
 .email-wrapper {
 	display: flex;
@@ -11,11 +12,11 @@
 
 .social-icon {
 	font-size: 15px;
-	color: #52525b;
+	color: var(--secondary-color);
 }
 
 .social-text {
-	color: #52525b;
+	color: var(--secondary-color);
 	padding-left: 30px;
 	margin-top: -20px;
 	font-weight: 600;

@@ -1,3 +1,5 @@
+@import "../../../data/styles.css";
+
 .footer {
 	display: flex;
 	padding-top: 25px;
@@ -23,26 +25,22 @@
 }
 
 .footer-nav-link-item {
-	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-		"Lucida Sans", Arial, sans-serif;
 	font-weight: bold;
 	font-size: 80%;
 }
 
 .footer-nav-link-list a {
 	text-decoration: none;
-	color: #333;
+	color: var(--secondary-color);
 }
 
 .footer-nav-link-list a:hover {
-	color: #14b8a6;
+	color: var(--link-color);
 }
 
 .footer-credits-text {
 	justify-content: flex-end;
-	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-		"Lucida Sans", Arial, sans-serif;
-	color: #a1a1aa;
+	color: var(--tertiary-color);
 	font-size: 14px;
 	text-align: right;
 }

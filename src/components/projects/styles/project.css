@@ -1,3 +1,5 @@
+@import "../../../data/styles.css";
+
 .project {
 	mix-blend-mode: normal;
 	border-radius: 20px;
@@ -16,7 +18,7 @@
 }
 
 .project:hover .project-link {
-	color: #33c1b1;
+	color: var(--link-color);
 	transition: color 0.3s ease-in-out;
 }
 
@@ -33,23 +35,22 @@
 }
 
 .project-title {
-	color: #27272a;
+	font-family: var(--secondary-font);
+	color: var(--primary-color);
 	font-size: 16px;
 	padding-top: 15px;
 	margin-bottom: 1em;
 	font-weight: 700;
-	color: #27272a;
 }
 
 .project-description {
-	font-family: system-ui;
-	color: #52525b;
+	color: var(--secondary-color);
 }
 
 .project-link {
 	display: flex;
 	align-items: center;
-	color: #52525b;
+	color: var(--secondary-color);
 	font-size: 12px;
 	padding-top: 20px;
 }

@@ -1,3 +1,5 @@
+@import "../../data/styles.css";
+
 .homepage-logo-container {
 	display: flex;
 	justify-content: left;
@@ -27,7 +29,6 @@
 
 .homepage-subtitle {
 	width: 85% !important;
-	margin-top: 20px;
 }
 
 .homepage-first-area-right-side {
@@ -54,13 +55,13 @@
 	display: flex;
 	justify-content: left;
 	align-items: center;
-	padding-top: 20px;
+	padding-top: 30px;
 }
 
 .homepage-social-icon {
 	padding-right: 20px;
 	font-size: 25px;
-	color: #52525b;
+	color: var(--secondary-color);
 }
 
 .homepage-after-title {

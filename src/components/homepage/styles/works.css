@@ -1,3 +1,9 @@
+@import "../../../data/styles.css";
+
+.works-body {
+	margin-bottom: 10px;
+}
+
 .work {
 	display: flex;
 	padding-bottom: 40px;
@@ -16,22 +22,23 @@
 	font-size: 15px;
 	font-weight: 700;
 	padding-left: 20px;
-	color: #52525b;
+	margin-top: -3px;
+	color: var(--secondary-color);
 }
 
 .work-subtitle {
 	position: absolute;
-	font-size: 14px;
-	color: #52525b;
-	padding-top: 20px;
+	font-size: 12px;
+	color: var(--secondary-color);
+	padding-top: 22px;
 	padding-left: 50px;
 }
 
 .work-duration {
 	position: absolute;
 	width: 350px;
-	font-size: 14px;
+	font-size: 12px;
 	padding-top: 20px;
 	text-align: right;
-	color: #52525b;
+	color: var(--tertiary-color);
 }

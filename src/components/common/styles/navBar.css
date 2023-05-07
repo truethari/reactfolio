@@ -1,3 +1,5 @@
+@import "../../../data/styles.css";
+
 .nav-container {
 	margin: 0;
 	display: flex;
@@ -26,43 +28,38 @@
 
 .nav-list {
 	display: flex;
-	list-style: none;
 	justify-content: space-between;
+	list-style: none;
 	align-items: center;
 	margin-left: -16px;
 	margin-right: 20px;
-	margin-top: 13px;
+	margin-top: 11px;
 }
 
 .nav-item {
-	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-		"Lucida Sans", Arial, sans-serif;
 	font-weight: bold;
 	font-size: 80%;
 }
 
 .nav-item.active a {
-	color: #14b8a6 !important;
+	color: var(--link-color) !important;
 }
 
 .nav-item a {
 	text-decoration: none;
-	color: #333;
+	color: var(--primary-color);
 }
 
-/* if nav item a hover */
 .nav-item a:hover {
-	color: #14b8a6;
+	color: var(--link-color);
 }
 
 .nav-icon {
 	display: none;
 }
 
-/* Styles for mobile screens */
 @media (max-width: 600px) {
 	.navbar {
-		display: flex;
 		justify-content: flex-end;
 		position: fixed;
 		top: 5%;
