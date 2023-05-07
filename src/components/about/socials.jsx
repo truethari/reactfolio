@@ -74,7 +74,7 @@ const Socials = () => {
 			<div className="email">
 				<div className="email-wrapper">
 					<a
-						href={INFO.socials.facebook}
+						href={`mailto:${INFO.main.email}`}
 						target="_blank"
 						rel="noreferrer"
 					>
@@ -82,7 +82,7 @@ const Socials = () => {
 							<FontAwesomeIcon icon={faEnvelope} />
 						</div>
 
-						<div className="social-text">example@example.com</div>
+						<div className="social-text">{INFO.main.email}</div>
 					</a>
 				</div>
 			</div>

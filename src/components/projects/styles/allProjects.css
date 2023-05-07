@@ -14,3 +14,9 @@
 	padding: 10px;
 	overflow: hidden;
 }
+
+@media (max-width: 600px) {
+	.all-projects-project {
+		width: calc(100% / 2);
+	}
+}

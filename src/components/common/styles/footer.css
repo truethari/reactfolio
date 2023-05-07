@@ -39,6 +39,7 @@
 }
 
 .footer-credits-text {
+	justify-content: flex-end;
 	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
 		"Lucida Sans", Arial, sans-serif;
 	color: #a1a1aa;
@@ -60,12 +61,5 @@
 
 	.footer-nav-link-list {
 		width: 100%;
-	}
-
-	.footer-credits {
-		padding-top: 10px;
-		position: relative;
-		right: auto;
-		justify-content: center;
 	}
 }

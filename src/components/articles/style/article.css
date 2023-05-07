@@ -52,3 +52,16 @@
 	color: #14b8a6;
 	font-weight: 700;
 }
+
+@media (max-width: 1024px) {
+	.article-left-side {
+		min-width: 10%;
+		max-width: 10%;
+	}
+
+	.article-right-side {
+		flex-basis: 90%;
+		min-width: 85%;
+		max-width: 85%;
+	}
+}
