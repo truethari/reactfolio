@@ -41,6 +41,10 @@
 	font-size: 80%;
 }
 
+.nav-item.active a {
+	color: #14b8a6 !important;
+}
+
 .nav-item a {
 	text-decoration: none;
 	color: #333;

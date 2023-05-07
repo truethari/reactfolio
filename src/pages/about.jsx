@@ -17,7 +17,7 @@ const About = () => {
 	return (
 		<React.Fragment>
 			<div className="page-content">
-				<NavBar />
+				<NavBar active="about" />
 				<div className="content-wrapper">
 					<div className="about-logo-container">
 						<div className="about-logo">

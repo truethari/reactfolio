@@ -17,7 +17,7 @@ const Contact = () => {
 	return (
 		<React.Fragment>
 			<div className="page-content">
-				<NavBar />
+				<NavBar active="contact" />
 				<div className="content-wrapper">
 					<div className="contact-logo-container">
 						<div className="contact-logo">

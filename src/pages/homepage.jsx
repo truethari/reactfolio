@@ -67,7 +67,7 @@ const Homepage = () => {
 	return (
 		<React.Fragment>
 			<div className="page-content">
-				<NavBar />
+				<NavBar active="home" />
 				<div className="content-wrapper">
 					<div className="homepage-logo-container">
 						<div style={logoStyle}>
