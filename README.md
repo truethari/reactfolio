@@ -5,12 +5,12 @@
 
 Under development 🚧🚧 Not ready to use.
 
--   [Features](#features)
--   [Getting started](#getting-started)
--   [Installation and Setup Instructions](#installation-and-setup-instructions)
--   [Folder structure](#Folder-structure)
--   [Configurations](#Configurations)
--   [Contribution](#Contribution)
+-   [Features](#-features)
+-   [Getting started](#-getting-started)
+-   [Installation and Setup Instructions](#-installation-and-setup-instructions)
+-   [Folder structure](#-folder-structure)
+-   [Configurations](#-configurations)
+-   [Contribution](#-contribution)
 
 ## 📙 Features
 
