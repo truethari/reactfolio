@@ -7,7 +7,7 @@ const Logo = (props) => {
 
 	return (
 		<React.Fragment>
-			<img src="logo.png" alt="logo" className="logo" width={width} />
+			<img src="../logo.png" alt="logo" className="logo" width={width} />
 		</React.Fragment>
 	);
 };

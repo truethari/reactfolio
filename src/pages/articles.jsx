@@ -42,7 +42,7 @@ const Articles = () => {
 										description={
 											"How to build a REST API with Node.js and Express How to build a REST API with Node.js and Express"
 										}
-										link={"https://google.com"}
+										link="/article/1"
 									/>
 								</div>
 								<div className="articles-article">
@@ -54,7 +54,7 @@ const Articles = () => {
 										description={
 											"How to build a REST API with Node.js and Express How to build a REST API with Node.js and Express How to build a REST API with Node.js and Express How to build a REST API with Node.js and Express"
 										}
-										link={"https://google.com"}
+										link="/article/2"
 									/>
 								</div>
 							</div>
