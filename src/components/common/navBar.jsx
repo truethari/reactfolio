@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 import "./styles/navBar.css";
 
@@ -60,9 +58,6 @@ const NavBar = (props) => {
 								<Link to="/contact">Contact</Link>
 							</li>
 						</ul>
-					</div>
-					<div className="nav-icon">
-						<FontAwesomeIcon icon={faBars} />
 					</div>
 				</nav>
 			</div>

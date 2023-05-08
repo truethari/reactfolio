@@ -54,35 +54,20 @@
 	color: var(--link-color);
 }
 
-.nav-icon {
-	display: none;
-}
-
 @media (max-width: 600px) {
 	.navbar {
-		justify-content: flex-end;
-		position: fixed;
-		top: 5%;
-		right: 5%;
-		padding: 10px;
+		margin-left: 25%;
+		margin-right: 25%;
+		width: 80%;
+		font-size: 80%;
 	}
 
 	.nav-background {
-		display: none;
-	}
-
-	.nav-list {
-		display: none;
-	}
-
-	.nav-icon {
-		display: flex;
-		list-style: none;
-		margin: 0;
-		padding: 0;
+		width: 80%;
+		height: 40px;
 	}
 
 	.nav-item {
-		margin: 10px 0;
+		font-weight: bold;
 	}
 }

@@ -110,4 +110,8 @@
 	.about-container {
 		padding-top: 60px;
 	}
+
+	.about-image-container {
+		width: 80%;
+	}
 }
