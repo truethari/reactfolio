@@ -61,7 +61,12 @@
 .homepage-social-icon {
 	padding-right: 20px;
 	font-size: 25px;
+	transition: color 0.2s ease-in-out;
 	color: var(--secondary-color);
+}
+
+.homepage-social-icon:hover {
+	color: var(--primary-color);
 }
 
 .homepage-after-title {

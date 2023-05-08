@@ -52,6 +52,7 @@
 
 .nav-item a:hover {
 	color: var(--link-color);
+	transition: color 0.3s ease-in-out;
 }
 
 @media (max-width: 600px) {
