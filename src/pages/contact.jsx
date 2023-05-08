@@ -11,7 +11,7 @@ import "./styles/contact.css";
 
 const Contact = () => {
 	useEffect(() => {
-		document.title = "Contact";
+		document.title = `Contact | ${INFO.main.title}`;
 	}, []);
 
 	return (

@@ -11,7 +11,7 @@ import "./styles/about.css";
 
 const About = () => {
 	useEffect(() => {
-		document.title = "About";
+		document.title = `About | ${INFO.main.title}`;
 	}, []);
 
 	return (

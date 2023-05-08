@@ -5,11 +5,13 @@ import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 import AllProjects from "../components/projects/allProjects";
 
+import INFO from "../data/user";
+
 import "./styles/projects.css";
 
 const Projects = () => {
 	useEffect(() => {
-		document.title = "Projects";
+		document.title = `Projects | ${INFO.main.title}`;
 	}, []);
 
 	return (
