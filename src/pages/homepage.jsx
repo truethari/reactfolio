@@ -28,6 +28,7 @@ const Homepage = () => {
 
 	useEffect(() => {
 		document.title = INFO.main.title;
+		window.scrollTo(0, 0);
 	}, []);
 
 	useEffect(() => {

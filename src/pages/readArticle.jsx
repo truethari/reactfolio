@@ -21,6 +21,7 @@ const ReadArticle = () => {
 
 	useEffect(() => {
 		document.title = `${article().title} | ${INFO.main.title}`;
+		window.scrollTo(0, 0);
 	}, [article]);
 
 	ArticleStyle = styled.div`

@@ -13,6 +13,7 @@ import "./styles/articles.css";
 const Articles = () => {
 	useEffect(() => {
 		document.title = `Articles | ${INFO.main.title}`;
+		window.scrollTo(0, 0);
 	}, []);
 
 	return (

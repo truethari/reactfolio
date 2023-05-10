@@ -12,6 +12,7 @@ import "./styles/projects.css";
 const Projects = () => {
 	useEffect(() => {
 		document.title = `Projects | ${INFO.main.title}`;
+		window.scrollTo(0, 0);
 	}, []);
 
 	return (

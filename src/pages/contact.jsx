@@ -12,6 +12,7 @@ import "./styles/contact.css";
 const Contact = () => {
 	useEffect(() => {
 		document.title = `Contact | ${INFO.main.title}`;
+		window.scrollTo(0, 0);
 	}, []);
 
 	return (
