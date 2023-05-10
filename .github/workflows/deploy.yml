@@ -31,5 +31,5 @@ jobs:
                   password: ${{ secrets.FTP_PASSWORD }}
                   port: 21
                   local-dir: build
-                  remote-dir: /
+                  remote-dir: reactfolio.tharindu.dev/
                   protocol: ftp
