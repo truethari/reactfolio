@@ -33,3 +33,4 @@ jobs:
                   local-dir: /home/runner/work/reactfolio/reactfolio/build/
                   remote-dir: reactfolio.tharindu.dev/
                   protocol: ftp
+                  dangerous-clean-slate: true
