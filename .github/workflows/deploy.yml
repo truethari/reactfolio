@@ -30,6 +30,6 @@ jobs:
                   username: ${{ secrets.FTP_USERNAME }}
                   password: ${{ secrets.FTP_PASSWORD }}
                   port: 21
-                  local-dir: build
+                  local-dir: /home/runner/work/reactfolio/reactfolio/build/
                   remote-dir: reactfolio.tharindu.dev/
                   protocol: ftp
