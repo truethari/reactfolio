@@ -1,6 +1,13 @@
 {
 	"name": "reactfolio",
-	"version": "1.0.0",
+	"version": "1.1.0",
+	"description": "Personal portfolio template built using Reactjs",
+	"author": {
+		"name": "Tharindu N. Madhusanka",
+		"email": "mail@tharindu.dev",
+		"url": "https://tharindu.dev"
+	},
+	"license": "MIT",
 	"private": true,
 	"dependencies": {
 		"@fortawesome/fontawesome-svg-core": "^6.4.0",
@@ -22,9 +29,7 @@
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
-		"eject": "react-scripts eject",
-		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build"
+		"eject": "react-scripts eject"
 	},
 	"eslintConfig": {
 		"extends": [
@@ -43,5 +48,9 @@
 			"last 1 firefox version",
 			"last 1 safari version"
 		]
+	},
+	"prettier": {
+		"useTabs": true,
+		"tabWidth": 4
 	}
 }

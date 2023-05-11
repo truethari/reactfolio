@@ -1,4 +1,4 @@
-# Reactfolio V1.0 👩🏽‍🚀
+# Reactfolio V1.1 👩🏽‍🚀
 
 Reactfolio is a modern and customizable personal portfolio web template built using the popular React library. It provides an easy way for developers, designers, and creatives to showcase their work, skills, and achievements in a professiona and visually appealing way. With its responsive design and clean code, Reactfolio can be easily tailored to suit individual needs and preferences, making it an ideal choice for anyone looking to create a stunning online portfolio.
 
@@ -53,6 +53,10 @@ The page will reload if you make edits.
 Since this is a public and open source project, you can make any changes to it. If you are a ReactJS developer you can do it easily. But if you are a beginner, I have extracted the configurable data into a single directory, so you can edit the files in that directory to configure the entire web application.
 
 Directory: `/src/data/`
+
+-   `user.js`
+
+    From this you can change the content of each page of the web application.
 
 -   `articles.js`
 
@@ -130,10 +134,6 @@ const myArticles = [article_1, article_2, article_3];
 	/* --------------------- */
 }
 ```
-
--   `user.js`
-
-    From this you can change the content of each page of the web application.
 
 ## 🌱 Contribution
 
