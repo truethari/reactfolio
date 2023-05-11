@@ -13,6 +13,7 @@ Live demo here: <a href="https://reactfolio.tharindu.dev/" target="_blank">react
 -   [Installation and Setup Instructions](#-installation-and-setup-instructions)
 -   [Folder structure](#-folder-structure)
 -   [Configurations](#-configurations)
+-   [Building the React App](#-building-the-react-app)
 -   [Contribution](#-contribution)
 
 ## 📙 Features
@@ -73,67 +74,80 @@ Directory: `/src/data/`
             - Add `<React.Fragment>` tag and it's closing tags in body.
             - In React there has no keyword `class`, so you should use `className` to define html classes.
 
+            ```js
+            function article_3() {
+            	return {
+            		date: "7 May 2023",
+            		title: "The Benefits of Cloud Computing",
+            		description: "Why businesses are turning to the cloud.",
+            		style: `
+            				.random-image {
+            					align-self: center;
+            					outline: 2px solid red;
+            				}
+            				`,
+            		body: (
+            			<React.Fragment>
+            				<div className="article-content">
+            					<div className="paragraph">
+            						Content of article 1
+            					</div>
+            					<img
+            						src="https://picsum.photos/200/300"
+            						alt="random"
+            						className="random-image"
+            					/>
+            				</div>
+            			</React.Fragment>
+            		),
+            	};
+            }
+            ```
+
         3. In the last lines you will see an array to which you need to add your new `articles` function.
 
-```js
-function article_3() {
-	return {
-		date: "7 May 2023",
-		title: "The Benefits of Cloud Computing",
-		description:
-			"Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
-		style: `
-				.article-content {
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-				}
-
-				.randImage {
-					align-self: center;
-					outline: 2px solid red;
-				}
-				`,
-		body: (
-			<React.Fragment>
-				<div className="article-content">
-					<div className="paragraph">Content of article 1</div>
-					<img
-						src="https://picsum.photos/200/300"
-						alt="random"
-						className="randImage"
-					/>
-				</div>
-			</React.Fragment>
-		),
-	};
-}
-```
-
-```js
-const myArticles = [article_1, article_2, article_3];
-```
+            ```js
+            const myArticles = [article_1, article_2, article_3];
+            ```
 
 -   `styles.css`
 
     From this you can change the font colors and font families of the web application.
 
-```css
-:root {
-	/* ------- colors ------- */
-	--primary-color: #27272a;
-	--secondary-color: #65656d;
-	--tertiary-color: #acacb4;
-	--quaternary-color: #e4e4e7;
-	--link-color: #14b8a6;
-	/* ---------------------- */
+        ```css
+        :root {
+        	/* ------- colors ------- */
+        	--primary-color: #27272a;
+        	--secondary-color: #65656d;
+        	--tertiary-color: #acacb4;
+        	--quaternary-color: #e4e4e7;
+        	--link-color: #14b8a6;
+        	/* ---------------------- */
 
-	/* ------- fonts ------- */
-	--primary-font: "Heebo", sans-serif;
-	--secondary-font: "Roboto", sans-serif;
-	/* --------------------- */
-}
-```
+        	/* ------- fonts ------- */
+        	--primary-font: "Heebo", sans-serif;
+        	--secondary-font: "Roboto", sans-serif;
+        	/* --------------------- */
+        }
+        ```
+
+## 🚀 Building the React App
+
+To build the React app, you can use the `npm run build` command. This will create a production-ready build of your app in the `build/` directory.
+
+Here are the steps to follow:
+
+1. Open a terminal window and navigate to the root directory of your React app.
+2. Run the `npm run build` command to create a production build of your app. This will generate a static bundle of your app in the `build/` directory.
+3. Copy the contents of the `build/` directory to your server's public directory. You can do this using an FTP client or by running a command like `scp` to transfer the files to your server. Make sure to replace `example.com` and `/var/www/html` with your server's domain name and public directory, respectively:
+
+    ```bash
+    scp -r build/* user@example.com:/var/www/html
+    ```
+
+4. Your portfolio app should now be accessible from your server's domain name. You can verify this by opening a web browser and navigating to http://example.com (replace example.com with your server's domain name).
+
+That's it! Your React portfolio app should now be up and running on your server. Note that you may need to configure your server's web server (e.g., Apache or Nginx) to serve the index.html file in the build/ directory as the default page for your domain.
 
 ## 🌱 Contribution
 
