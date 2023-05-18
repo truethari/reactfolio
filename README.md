@@ -14,6 +14,7 @@ Live demo here: <a href="https://reactfolio.tharindu.dev/" target="_blank">react
 -   [Folder structure](#-folder-structure)
 -   [Configurations](#-configurations)
 -   [Building the React App](#-building-the-react-app)
+-   [FAQ](#-faq)
 -   [Contribution](#-contribution)
 
 ## 📙 Features
@@ -148,6 +149,24 @@ Here are the steps to follow:
 4. Your portfolio app should now be accessible from your server's domain name. You can verify this by opening a web browser and navigating to http://example.com (replace example.com with your server's domain name).
 
 That's it! Your React portfolio app should now be up and running on your server. Note that you may need to configure your server's web server (e.g., Apache or Nginx) to serve the index.html file in the build/ directory as the default page for your domain.
+
+## 🤔 FAQ
+
+**Q1. Subpages can only be accessed through links on the homepage or navigation bar, but those pages are not accessible through direct links.**
+
+If you are using Apache as your web server, you can insert this into your .htaccess file:
+
+```c
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteRule . /index.html [L]
+</IfModule>
+```
 
 ## 🌱 Contribution
 
