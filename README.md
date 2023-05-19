@@ -13,6 +13,7 @@ Live demo here: <a href="https://reactfolio.tharindu.dev/" target="_blank">react
 -   [Installation and Setup Instructions](#-installation-and-setup-instructions)
 -   [Folder structure](#-folder-structure)
 -   [Configurations](#-configurations)
+-   [Google Analytics](#-google-analytics)
 -   [Building the React App](#-building-the-react-app)
 -   [FAQ](#-faq)
 -   [Contribution](#-contribution)
@@ -131,6 +132,14 @@ Directory: `/src/data/`
         	/* --------------------- */
         }
         ```
+
+## 📈 Google Analytics
+
+Add your Google Analytics 4 MEASUREMENT ID to `/src/data/tracking.js`.
+
+How to find the Google Analytics 4 MEASUREMENT ID ?
+
+[https://support.google.com/analytics/answer/9539598?hl=en](https://support.google.com/analytics/answer/9539598?hl=en)
 
 ## 🚀 Building the React App
 
