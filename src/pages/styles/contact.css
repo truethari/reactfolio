@@ -20,14 +20,19 @@
 .contact-container {
 	display: flex;
 	flex-direction: column;
-	height: 100%;
-	margin: 0;
-	padding-top: 120px;
+	justify-content: space-around;
+	margin-top: 120px;
+}
+
+
+.socials-container {
+	display: flex;
+	flex-direction: column;
+	margin-top: 80px;
 }
 
 .contact-socials {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	margin-top: -70px;
 }

@@ -61,7 +61,7 @@ const Contact = () => {
 						</div>
 					</div>
 
-					<div className="contact-container">
+					<div className="socials-container">
 						<div className="contact-socials">
 							<Socials />
 						</div>
