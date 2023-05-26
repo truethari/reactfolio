@@ -1,4 +1,4 @@
-# Reactfolio V1.1 👩🏽‍🚀
+# Reactfolio V1.2 👩🏽‍🚀
 
 Reactfolio is a modern and customizable personal portfolio web template built using the popular React library. It provides an easy way for developers, designers, and creatives to showcase their work, skills, and achievements in a professiona and visually appealing way. With its responsive design and clean code, Reactfolio can be easily tailored to suit individual needs and preferences, making it an ideal choice for anyone looking to create a stunning online portfolio.
 
@@ -114,26 +114,53 @@ Directory: `/src/data/`
             const myArticles = [article_1, article_2, article_3];
             ```
 
+-   `seo.js`
+
+    The SEO.js file is a module that contains an array of objects, with each object representing metadata for a specific page of a React website. The purpose of this file is to centralize and manage the SEO (Search Engine Optimization) information for different pages.
+
+    Each object in the SEO array has the following properties:
+
+    `page`: Represents the page name or identifier. It helps in mapping the SEO data to the appropriate page.
+
+    `title`: Specifies the title of the page. This title is typically displayed in the browser's title bar and is an important element for search engines.
+
+    `description`: Provides a concise and informative description of the page content. This description is often displayed in search engine results and can greatly influence click-through rates.
+    keywords: Contains an array of keywords relevant to the page's content. Keywords can help search engines understand the topics covered on the page and can impact its visibility in search results.
+    By storing the SEO information in the SEO.js file, you can easily manage and update the metadata for different pages of your React website. This approach allows you to keep the SEO data separate from the components and reuse it across the application, ensuring consistent and optimized metadata for each page.
+
+    Example:
+
+    ```js
+    const SEO = [
+    	{
+    		page: "home",
+    		description:
+    			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies.",
+    		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+    	},
+    ];
+    ```
+
 -   `styles.css`
 
     From this you can change the font colors and font families of the web application.
 
-        ```css
-        :root {
-        	/* ------- colors ------- */
-        	--primary-color: #27272a;
-        	--secondary-color: #65656d;
-        	--tertiary-color: #acacb4;
-        	--quaternary-color: #e4e4e7;
-        	--link-color: #14b8a6;
-        	/* ---------------------- */
+    ```css
+    :root {
+    	/* ------- colors ------- */
+    	--primary-color: #27272a;
+    	--secondary-color: #65656d;
+    	--tertiary-color: #acacb4;
+    	--quaternary-color: #e4e4e7;
+    	--link-color: #14b8a6;
+    	/* ---------------------- */
 
-        	/* ------- fonts ------- */
-        	--primary-font: "Heebo", sans-serif;
-        	--secondary-font: "Roboto", sans-serif;
-        	/* --------------------- */
-        }
-        ```
+    	/* ------- fonts ------- */
+    	--primary-font: "Heebo", sans-serif;
+    	--secondary-font: "Roboto", sans-serif;
+    	/* --------------------- */
+    }
+    ```
 
 ## 📈 Google Analytics
 
