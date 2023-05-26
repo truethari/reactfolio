@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import styled from "styled-components";
 
 import NavBar from "../components/common/navBar";
@@ -20,7 +21,6 @@ const ReadArticle = () => {
 	const article = myArticles[slug - 1];
 
 	useEffect(() => {
-		document.title = `${article().title} | ${INFO.main.title}`;
 		window.scrollTo(0, 0);
 	}, [article]);
 
@@ -30,6 +30,12 @@ const ReadArticle = () => {
 
 	return (
 		<React.Fragment>
+			<Helmet>
+				<title>{`${article().title} | ${INFO.main.title}`}</title>
+				<meta name="description" content={article().description} />
+				<meta name="keywords" content={article().keywords.join(", ")} />
+			</Helmet>
+
 			<div className="page-content">
 				<NavBar />
 

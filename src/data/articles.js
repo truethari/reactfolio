@@ -6,6 +6,12 @@ function article_1() {
 		title: "The Benefits of Cloud Computing",
 		description:
 			"Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
+		keywords: [
+			"The Benefits of Cloud Computing",
+			"Tharindu",
+			"Tharindu N",
+			"Tharindu Nayanajith",
+		],
 		style: `
 				.article-content {
 					display: flex;
@@ -40,6 +46,12 @@ function article_2() {
 		description:
 			"AI is transforming the healthcare industry, from improving patient outcomes to streamlining operations. Discover the latest applications of this game-changing technology.",
 		style: ``,
+		keywords: [
+			"Artificial Intelligence in Healthcare",
+			"Tharindu",
+			"Tharindu N",
+			"Tharindu Nayanajith",
+		],
 		body: (
 			<React.Fragment>
 				<h1>Content of article 2</h1>
