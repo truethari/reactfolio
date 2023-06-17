@@ -4,6 +4,7 @@ import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import Card from "../common/card";
 
 import "./styles/works.css";
+import jpmorgan from "./jpmorganchase.jfif";
 
 const Works = () => {
 	return (
@@ -15,28 +16,16 @@ const Works = () => {
 					<div className="works-body">
 						<div className="work">
 							<img
-								src="./facebook.png"
-								alt="facebook"
-								className="work-image"
-							/>
-							<div className="work-title">Facebook</div>
-							<div className="work-subtitle">
-								Software Engineer
-							</div>
-							<div className="work-duration">2019 - Present</div>
-						</div>
+								src={jpmorgan}
 
-						<div className="work">
-							<img
-								src="./twitter.png"
-								alt="twitter"
+								alt="jpmorgan"
 								className="work-image"
 							/>
-							<div className="work-title">Twitter</div>
+							<div className="work-title">JPMorgan Chase & Co.</div>
 							<div className="work-subtitle">
 								Software Engineer
 							</div>
-							<div className="work-duration">2019 - Present</div>
+							<div className="work-duration">2022 - Present</div>
 						</div>
 					</div>
 				}
