@@ -46,9 +46,9 @@ const NavBar = (props) => {
 										: "nav-item"
 								}
 							>
-								<Link to="/articles">Articles</Link>
+								<Link to="/articles">Speaking</Link>
 							</li>
-							<li
+							{/* <li
 								className={
 									active === "contact"
 										? "nav-item active"
@@ -56,7 +56,7 @@ const NavBar = (props) => {
 								}
 							>
 								<Link to="/contact">Contact</Link>
-							</li>
+							</li> */}
 						</ul>
 					</div>
 				</nav>

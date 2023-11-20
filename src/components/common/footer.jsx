@@ -19,19 +19,14 @@ const Footer = () => {
 							<Link to="/projects">Projects</Link>
 						</li>
 						<li className="footer-nav-link-item">
-							<Link to="/articles">Articles</Link>
+							<Link to="/articles">Speaking</Link>
 						</li>
-						<li className="footer-nav-link-item">
+						{/* <li className="footer-nav-link-item">
 							<Link to="/contact">Contact</Link>
-						</li>
+						</li> */}
 					</ul>
 				</div>
 
-				<div className="footer-credits">
-					<div className="footer-credits-text">
-						© 2023 Tharindu.dev. All Rights Reserved.
-					</div>
-				</div>
 			</div>
 		</React.Fragment>
 	);

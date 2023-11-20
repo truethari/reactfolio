@@ -2,15 +2,14 @@ import React from "react";
 
 function article_1() {
 	return {
-		date: "7 May 2023",
-		title: "The Benefits of Cloud Computing",
+		date: "June 2022",
+		title: "Adapting Engineering Practices for Research Process",
 		description:
-			"Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
+			"My talk from UXRConf22 discussing engineering traditions and rituals that set up research practices for success.",
 		keywords: [
-			"The Benefits of Cloud Computing",
-			"Tharindu",
-			"Tharindu N",
-			"Tharindu Nayanajith",
+			"Adapting Engineering Practices for Research Process",
+			"Chelsea Yip",
+			"UXRConf",
 		],
 		style: `
 				.article-content {
@@ -60,6 +59,6 @@ function article_2() {
 	};
 }
 
-const myArticles = [article_1, article_2];
+const myArticles = [article_1];
 
 export default myArticles;
