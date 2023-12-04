@@ -14,6 +14,11 @@ const Works = () => {
 				body={
 					<div className="works-body">
 						<div className="work">
+						<img
+								src="./bubble.png"
+								alt="bubble"
+								className="work-image"
+							/>
 							<div className="work-title">Bubble</div>
 							<div className="work-subtitle">
 								Senior User Researcher
@@ -22,6 +27,11 @@ const Works = () => {
 						</div>
 
 						<div className="work">
+						<img
+								src="./coinbase.png"
+								alt="coinbase"
+								className="work-image"
+							/>
 							<div className="work-title">Coinbase</div>
 							<div className="work-subtitle">
 								UX Researcher
@@ -30,11 +40,11 @@ const Works = () => {
 						</div>
 
 						<div className="work">
-							{/* <img
-								src="./twitter.png"
-								alt="twitter"
+							<img
+								src="./capitalone.png"
+								alt="capitalone"
 								className="work-image"
-							/> */}
+							/>
 							<div className="work-title">Capital One</div>
 							<div className="work-subtitle">
 								Senior Software Engineer

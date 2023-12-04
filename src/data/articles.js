@@ -6,7 +6,10 @@ function article_1() {
 		title: "Adapting Engineering Practices for Research Process",
 		description:
 			"My talk from UXRConf22 discussing engineering traditions and rituals that set up research practices for success.",
-		keywords: [
+		abstract:
+		"Abstract: As a relatively young institution in product, isn't it time we started thinking about what traditions and rituals we implement to set up our research practices for success? A few years back, Chelsea was working as a software engineer before transitioning to research, and she brought some key rituals from her time as an engineer with her. These new institutions have been a bedrock for her practice, and she's going to share them with the community in this talk.",	
+		link: "https://joinlearners.com/talk/adapting-engineering-practices-for-research-process",
+			keywords: [
 			"Adapting Engineering Practices for Research Process",
 			"Chelsea Yip",
 			"UXRConf",
@@ -23,39 +26,18 @@ function article_1() {
 					outline: 2px solid red;
 				}
 				`,
-		body: (
-			<React.Fragment>
-				<div className="article-content">
-					<div className="paragraph">Content of article 1</div>
-					<img
-						src="https://picsum.photos/200/300"
-						alt="random"
-						className="randImage"
-					/>
-				</div>
-			</React.Fragment>
-		),
-	};
-}
-
-function article_2() {
-	return {
-		date: "7 May 2023",
-		title: "Artificial Intelligence in Healthcare",
-		description:
-			"AI is transforming the healthcare industry, from improving patient outcomes to streamlining operations. Discover the latest applications of this game-changing technology.",
-		style: ``,
-		keywords: [
-			"Artificial Intelligence in Healthcare",
-			"Tharindu",
-			"Tharindu N",
-			"Tharindu Nayanajith",
-		],
-		body: (
-			<React.Fragment>
-				<h1>Content of article 2</h1>
-			</React.Fragment>
-		),
+		// body: (
+		// 	<React.Fragment>
+		// 		<div className="article-content">
+		// 			<div className="paragraph">Content of article 1</div>
+		// 			<img
+		// 				src="https://picsum.photos/200/300"
+		// 				alt="random"
+		// 				className="randImage"
+		// 			/>
+		// 		</div>
+		// 	</React.Fragment>
+		// ),
 	};
 }
 

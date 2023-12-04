@@ -7,7 +7,7 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import "./styles/article.css";
 
 const Article = (props) => {
-	const { title, description, date, link } = props;
+	const { title, description, date, link, abstract } = props;
 
 	return (
 		<React.Fragment>
@@ -20,9 +20,12 @@ const Article = (props) => {
 					<div className="homepage-article-description">
 						{description}
 					</div>
+					<div className="homepage-article-description">
+						{abstract}
+					</div>
 					<div className="homepage-article-link">
 						<Link to={link}>
-							Read article{" "}
+							View{" "}
 							<FontAwesomeIcon
 								style={{ fontSize: "10px" }}
 								icon={faChevronRight}

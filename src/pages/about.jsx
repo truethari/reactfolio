@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
@@ -8,6 +9,9 @@ import Socials from "../components/about/socials";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 import "./styles/about.css";
 
@@ -50,7 +54,17 @@ const About = () => {
 								</div>
 
 								<div className="subtitle about-subtitle">
-									TO DO: personality about
+									I'm currently on the user research team at Bubble, building the future of no-code. Outside of work, I'm a retired competitive dancer, a budding stand-up comedian, and an enthusiastic at-home bartender.
+								</div>
+
+								<div className="subtitle about-subtitle">
+									<Link to="https://drive.google.com/file/d/1v6xvvcA1n6PNhrByMLBIF3cp9GmcO9Ky/view?usp=sharing">
+										View my resume{" "}
+										<FontAwesomeIcon
+											style={{ fontSize: "10px" }}
+											icon={faChevronRight}
+										/>
+									</Link>
 								</div>
 							</div>
 

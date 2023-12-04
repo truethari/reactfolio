@@ -68,7 +68,7 @@ const ReadArticle = () => {
 							</div>
 
 							<div className="read-article-body">
-								<ArticleStyle>{article().body}</ArticleStyle>
+								<ArticleStyle>{article().abstract}</ArticleStyle>
 							</div>
 						</div>
 					</div>

@@ -16,9 +16,9 @@ const INFO = {
 	},
 
 	homepage: {
-		title: "UX Researcher",
+		title: "Chelsea Yip - UX Researcher",
 		description:
-			"I'm a mixed-methods UX researcher with a knack for translating technical concepts into plaintext.",
+			"I'm a mixed-methods UX researcher with a knack for translating users wants and needs into impactful product change. With a strong technical background in engineering, I am uniquely positioned to design, evaluate, and build user experiences.",
 	},
 
 	about: {
