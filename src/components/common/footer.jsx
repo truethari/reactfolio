@@ -21,9 +21,6 @@ const Footer = () => {
 						<li className="footer-nav-link-item">
 							<Link to="/articles">Speaking</Link>
 						</li>
-						{/* <li className="footer-nav-link-item">
-							<Link to="/contact">Contact</Link>
-						</li> */}
 					</ul>
 				</div>
 
