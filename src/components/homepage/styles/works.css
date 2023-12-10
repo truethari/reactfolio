@@ -28,7 +28,7 @@
 
 .work-subtitle {
 	position: absolute;
-	font-size: 12px;
+	font-size: 14px;
 	color: var(--secondary-color);
 	padding-top: 22px;
 	padding-left: 50px;
@@ -37,7 +37,7 @@
 .work-duration {
 	position: absolute;
 	width: 350px;
-	font-size: 12px;
+	font-size: 14px;
 	padding-top: 20px;
 	text-align: right;
 	color: var(--tertiary-color);

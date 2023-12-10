@@ -20,7 +20,7 @@
 .homepage-article-date {
 	opacity: 1;
 	color: var(--tertiary-color);
-	font-size: 12px;
+	font-size: 14px;
 	margin-bottom: 1em;
 }
 
@@ -35,7 +35,7 @@
 .homepage-article-description {
 	opacity: 1;
 	color: var(--secondary-color);
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 1.5;
 }
 
