@@ -16,7 +16,8 @@ const INFO = {
 	},
 
 	homepage: {
-		title: "Chelsea Yip - UX Researcher",
+		title: "Chelsea Yip",
+		subtitle: "UX Researcher",
 		description:
 			"I'm a mixed-methods UX researcher with a knack for translating users wants and needs into impactful product change. With a strong technical background in engineering, I am uniquely positioned to design, evaluate, and build user experiences.",
 	},
@@ -28,9 +29,9 @@ const INFO = {
 	},
 
 	articles: {
-		title: "Speaking Engagements",
+		title: "Published work",
 		description:
-			"Archive of recordings",
+			"Articles and speaking engagements",
 	},
 
 	projects: [

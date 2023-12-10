@@ -43,7 +43,7 @@ const Projects = () => {
 						</div>
 
 						<div className="subtitle projects-subtitle">
-						The projects collected below are a sample of my industry and academic experience. For access to proprietary projects, please contact me directly at chelseakyip@gmail.com.
+						The projects collected below are a sample of my work experience through the Pratt Center for Digital Experiences. For access to proprietary projects, please contact me directly at chelseakyip@gmail.com.
 						</div>
 
 						<div className="projects-list">

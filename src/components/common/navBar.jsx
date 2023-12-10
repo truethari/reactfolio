@@ -46,7 +46,7 @@ const NavBar = (props) => {
 										: "nav-item"
 								}
 							>
-								<Link to="/articles">Speaking</Link>
+								<Link to="/articles">Articles</Link>
 							</li>
 						</ul>
 					</div>

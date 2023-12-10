@@ -54,11 +54,11 @@ const About = () => {
 								</div>
 
 								<div className="subtitle about-subtitle">
-									I'm currently on the user research team at Bubble, building the future of no-code. Outside of work, I'm a retired competitive dancer, a budding stand-up comedian, and an enthusiastic at-home bartender.
+									I'm currently a user researcher at Bubble, building the future of no-code. Outside of work, I'm a retired competitive dancer, a budding stand-up comedian, and an enthusiastic at-home bartender.
 								</div>
 
 								<div className="subtitle about-subtitle">
-									<Link to="https://drive.google.com/file/d/1v6xvvcA1n6PNhrByMLBIF3cp9GmcO9Ky/view?usp=sharing">
+									<Link to="https://drive.google.com/file/d/1rdatdTDXxdC-5Iaz9MLqDd1_CnZyy6Mo/view?usp=sharing">
 										View my resume{" "}
 										<FontAwesomeIcon
 											style={{ fontSize: "10px" }}

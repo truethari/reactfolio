@@ -16,7 +16,7 @@ const SEO = [
 	{
 		page: "articles",
 		description:
-			"Selected speaking engagements",
+			"Selected published work",
 		keywords: ["Chelsea", "Chelsea Y", "Chelsea Yip"],
 	},
 
