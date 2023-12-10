@@ -7,12 +7,8 @@ const INFO = {
 	},
 
 	socials: {
-		twitter: "https://twitter.com/",
-		github: "https://github.com/",
+		github: "https://github.com/chelsea-yip",
 		linkedin: "https://linkedin.com/in/chelsea-yip/",
-		instagram: "https://instagram.com/",
-		stackoverflow: "https://stackoverflow.com/",
-		facebook: "https://facebook.com/",
 	},
 
 	homepage: {
