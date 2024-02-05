@@ -11,12 +11,15 @@
 .all-projects-project {
 	width: calc(100% / 3);
 	box-sizing: border-box;
-	padding: 10px;
+	margin: 10px;
 	overflow: hidden;
+	border-radius: 12px;
+	outline: 6px solid white;
+	box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.25);
 }
 
 @media (max-width: 600px) {
 	.all-projects-project {
-		width: calc(100% / 2);
+		width: calc(100% / 1);
 	}
 }

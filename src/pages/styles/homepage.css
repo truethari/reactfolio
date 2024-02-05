@@ -78,7 +78,7 @@
 	padding-top: 40px;
 }
 
-.homepage-articles {
+/* .homepage-articles {
 	flex-basis: 900px;
 	padding-top: 30px;
 	margin-left: -30px;
@@ -86,10 +86,13 @@
 
 .homepage-article {
 	padding-bottom: 5px;
-}
+} */
 
 .homepage-works {
-	flex-basis: 600px;
+	/* margin-left: 50px;
+	margin-right: 50px; */
+	padding-left: 50px;
+	padding-right: 50px;
 	padding-top: 30px;
 }
 

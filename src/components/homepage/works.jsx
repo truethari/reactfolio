@@ -4,6 +4,7 @@ import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import Card from "../common/card";
 
 import "./styles/works.css";
+import INFO from "../../data/user";
 
 const Works = () => {
 	return (
@@ -11,35 +12,35 @@ const Works = () => {
 			<Card
 				icon={faBriefcase}
 				title="Work"
-				body={
-					<div className="works-body">
+				body={INFO.work.map((work, index) => (
+					<div id={index} className="works-body">
 						<div className="work">
-							<img
-								src="./facebook.png"
-								alt="facebook"
-								className="work-image"
-							/>
-							<div className="work-title">Facebook</div>
-							<div className="work-subtitle">
-								Software Engineer
+							<div className="work-header">
+								<img
+									src={work.logo}
+									alt={work.alt}
+									className="work-image"
+								/>
+								<div className="work-title">{work.title}</div>
 							</div>
-							<div className="work-duration">2019 - Present</div>
-						</div>
-
-						<div className="work">
-							<img
-								src="./twitter.png"
-								alt="twitter"
-								className="work-image"
-							/>
-							<div className="work-title">Twitter</div>
-							<div className="work-subtitle">
-								Software Engineer
+							<div className="work-info">
+								<div className="work-subtitle">
+									{work.subtitle}
+								</div>
+								<div className="work-duration">
+									{work.duration}
+								</div>
 							</div>
-							<div className="work-duration">2019 - Present</div>
+							<div className="work-subtitle">
+								<ul>
+									{work.desc.map((desc, index) => (
+										<li key={index}>{desc}</li>
+									))}
+								</ul>
+							</div>
 						</div>
 					</div>
-				}
+				))}
 			/>
 		</div>
 	);
