@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
-import Logo from "../components/common/logo";
+
 import Socials from "../components/about/socials";
 
 import INFO from "../data/user";
@@ -33,9 +33,7 @@ const Contact = () => {
 				<NavBar active="contact" />
 				<div className="content-wrapper">
 					<div className="contact-logo-container">
-						<div className="contact-logo">
-							<Logo width={46} />
-						</div>
+						<div className="contact-logo"></div>
 					</div>
 
 					<div className="contact-container">
