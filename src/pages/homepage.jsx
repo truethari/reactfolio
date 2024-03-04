@@ -3,12 +3,7 @@ import { Helmet } from "react-helmet";
 
 import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-	faTwitter,
-	faGithub,
-	faStackOverflow,
-	faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
@@ -79,8 +74,6 @@ const Homepage = () => {
 			<div className="page-content">
 				<NavBar active="home" />
 				<div className="content-wrapper">
-					{/* Removed logo section */}
-
 					<div className="homepage-container">
 						<div className="homepage-first-area">
 							<div className="homepage-first-area-left-side">
