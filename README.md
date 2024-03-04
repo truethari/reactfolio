@@ -22,14 +22,7 @@ Readme here: <a href="https://tharindu.dev/portfolio/reactfolio/" target="_blank
 
 ## 📙 Features
 
--   📖 Multi-Page Layout
-    -   Home
-    -   About
-    -   Projects
-    -   Articles
-    -   Contact
--   📱 Fully Responsive
--   🛠 Easy configurations
+-   📖 Multi-Page Layo
 
 ## 📚 Getting started
 
