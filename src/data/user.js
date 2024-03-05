@@ -17,14 +17,14 @@ const INFO = {
 	},
 
 	about: {
-		title: "I’m Tharindu N. I live in Sri Lanka, where I design the future.",
+		title: "Ravkeerat Singh",
 		description:
-			"Designing immersive digital journeys with the magic of HTML, CSS, and JavaScript.",
+			"I'm Ravkeerat Singh, a recent graduate passionate about front-end development. Proficient in HTML, CSS, and React.js, I bring a keen eye for design and a drive for creating engaging user experiences. Eager to apply my skills in real-world projects, I thrive in collaborative environments and am committed to delivering polished, innovative solutions. Let's connect and explore how I can contribute to your team!",
 	},
 
 	projects: [
 		{
-			title: "Time Mastwer Application",
+			title: "Time Master Application",
 			description:
 				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
