@@ -1,0 +1,44 @@
+@import "../../../data/styles.css";
+
+.works-body {
+	margin-bottom: 10px;
+}
+
+.work {
+	display: flex;
+	padding-bottom: 40px;
+	width: 400px;
+}
+
+.work-image {
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	outline: 6px solid white;
+	box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.25);
+}
+
+.work-title {
+	font-size: 15px;
+	font-weight: 700;
+	padding-left: 20px;
+	margin-top: -3px;
+	color: var(--secondary-color);
+}
+
+.work-subtitle {
+	position: absolute;
+	font-size: 12px;
+	color: var(--secondary-color);
+	padding-top: 22px;
+	padding-left: 50px;
+}
+
+.work-duration {
+	position: absolute;
+	width: 350px;
+	font-size: 12px;
+	padding-top: 20px;
+	text-align: right;
+	color: var(--tertiary-color);
+}

@@ -1,0 +1,84 @@
+/* homepage.css */
+
+.page-content {
+	padding: 20px;
+}
+
+.homepage-container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.homepage-first-area {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.homepage-first-area-left-side {
+	flex: 1;
+}
+
+.homepage-first-area-right-side {
+	flex: 1;
+}
+
+.homepage-title {
+	font-size: 24px;
+	font-weight: bold;
+	color: #333;
+}
+
+.homepage-subtitle {
+	font-size: 18px;
+	color: #666;
+}
+
+.homepage-image-container {
+	width: 100%;
+}
+
+.homepage-image {
+	width: 100%;
+	max-width: 400px;
+	height: auto;
+}
+
+.homepage-socials {
+	margin-bottom: 20px;
+}
+
+.homepage-social-icon {
+	font-size: 24px;
+	margin-right: 10px;
+	color: #333;
+}
+
+.homepage-projects,
+.homepage-works {
+	margin-bottom: 40px;
+}
+
+.page-footer {
+	background-color: #f4f4f4;
+	padding: 20px;
+	text-align: center;
+}
+
+/* Mobile Responsive Styles */
+@media only screen and (max-width: 768px) {
+	.homepage-first-area {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.homepage-title,
+	.homepage-subtitle {
+		text-align: center;
+	}
+
+	.homepage-image {
+		max-width: 100%;
+	}
+}

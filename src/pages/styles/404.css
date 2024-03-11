@@ -1,0 +1,97 @@
+.not-found {
+	overflow: hidden;
+	height: 100vh;
+}
+
+.notfound-logo-container {
+	display: flex;
+	justify-content: left;
+	padding-top: 25px;
+}
+
+.notfound-logo {
+	display: flex;
+	position: fixed;
+	border: 1px solid white;
+	border-radius: 50%;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+	top: 4vh;
+	z-index: 999;
+}
+
+.notfound-container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	margin: 0;
+	padding-top: 120px;
+}
+
+.notfound-message {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.notfound-title {
+	font-family: var(--secondary-font);
+	color: var(--primary-color);
+	font-size: 80px;
+	padding-top: 15px;
+	font-weight: 700;
+}
+
+.not-found-message {
+	color: var(--secondary-color);
+	font-size: 2rem;
+	margin: 2rem 0;
+	text-align: center;
+}
+
+.not-found-link {
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: #fff;
+	background-color: var(--link-color);
+	padding: 1rem 2rem;
+	border-radius: 50px;
+	transition: all 0.3s ease-in-out;
+}
+
+.not-found-link:hover {
+	background-color: #fff;
+	color: var(--link-color);
+	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 500px) {
+	.notfound-message {
+		position: absolute;
+		top: auto;
+		left: auto;
+		width: 100%;
+		transform: none;
+	}
+
+	.notfound-title {
+		font-size: 50px;
+	}
+
+	.not-found-message {
+		width: 100%;
+		font-size: 15px;
+		margin-top: 10px;
+		margin-left: -5px;
+		margin-right: 32px;
+	}
+
+	.not-found-link {
+		font-size: 15px;
+		padding: 15px 15px;
+	}
+}
