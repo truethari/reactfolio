@@ -25,28 +25,40 @@ const INFO = {
 	projects: [
 		{
 			title: "Time Master Application",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "https://github.com",
+			description: `"
+				- Created a user-centric application for employees to manage schedules, clock
+				in/out, and request time off
+				- Enriched functionality by implementing manager features for efficient
+				employee management."`,
+			linkText: "Time Master",
+			link: "https://time-master.herokuapp.com/",
 		},
 
 		{
 			title: "CarHub",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+			description: `
+				• Developed a web-based application enabling users to sort, filter, and search for
+				specific cars by year and fuel mileage. Results feature detailed descriptions and
+				images for enhanced user engagement.
+				• Implemented debug points to ensure seamless functionality and address
+				any potential issues promptly, maintaining the application's reliability and
+				performance.`,
+
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://car-hub-nine-rust.vercel.app/",
 		},
 		{
 			title: "Landing Page",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+			description: `The landing page includes the following sections:
+
+Services
+Hero
+Features
+How to Use
+Header and Footer
+Pricing`,
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://landing-page-ui-s1e2-git-main-ravkeerat02.vercel.app/",
 		},
 	],
 };
