@@ -65,10 +65,6 @@
 	margin-top: 25px;
 }
 
-.page-footer {
-	position: block;
-}
-
 .page-footer::before {
 	content: "";
 	position: absolute;

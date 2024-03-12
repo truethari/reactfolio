@@ -36,8 +36,11 @@ const Homepage = () => {
 									<div className="text-lg mb-4">
 										{INFO.homepage.description}
 									</div>
-									{/* Social links */}
-									<div className="flex justify-center">
+								</div>
+
+								{/* Social links container */}
+								<div className="w-full md:w-1/2 flex justify-center md:justify-end">
+									<div className="flex">
 										<a
 											href={INFO.socials.github}
 											target="_blank"

@@ -28,37 +28,34 @@ const About = () => {
 				/>
 			</Helmet>
 
-			<div className="page-content">
-				<NavBar active="about" />
-				<div className="content-wrapper">
-					{/* Removed logo section */}
-
-					<div className="about-container">
-						<div className="about-main">
-							<div className="about-right-side">
-								<div className="title about-title">
-									{INFO.about.title}
-								</div>
-
-								<div className="subtitle about-subtitle">
-									{INFO.about.description}
-								</div>
+			<NavBar active="about" />
+			<div className="content-wrapper">
+				<div className="about-container">
+					<div className="about-main">
+						<div className="about-right-side">
+							<div className="title about-title">
+								{INFO.about.title}
 							</div>
 
-							<div className="about-left-side">
-								<div className="about-socials">
-									<Socials />
-								</div>
+							<div className="subtitle about-subtitle">
+								{INFO.about.description}
 							</div>
 						</div>
-						<div className="about-socials-mobile">
-							<Socials />
+
+						<div className="about-left-side">
+							<div className="about-socials">
+								<Socials />
+								{/* Add a link to download CV below the LinkedIn logo */}
+							</div>
 						</div>
-					</div>
-					<div className="page-footer mt-auto">
-						<Footer />
 					</div>
 				</div>
+				<div className="about-socials-mobile">
+					<Socials />
+				</div>
+			</div>
+			<div className="page-footer mt-auto">
+				<Footer />
 			</div>
 		</React.Fragment>
 	);
