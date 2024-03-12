@@ -55,7 +55,7 @@ const About = () => {
 							<Socials />
 						</div>
 					</div>
-					<div className="page-footer">
+					<div className="page-footer mt-auto">
 						<Footer />
 					</div>
 				</div>

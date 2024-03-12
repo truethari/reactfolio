@@ -28,6 +28,11 @@ const Works = () => {
 							<div className="work-subtitle">Intern</div>
 							<div className="work-duration">2023 - 2023</div>
 						</div>
+						<div className="work">
+							<div className="work-title">EXL</div>
+							<div className="work-subtitle">Intern</div>
+							<div className="work-duration">2023 - 2023</div>
+						</div>
 					</div>
 				}
 			/>
