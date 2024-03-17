@@ -1,84 +1,111 @@
-import React, { useEffect } from "react";
-import { Helmet } from "react-helmet";
-import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import Footer from "../components/common/footer";
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
 import NavBar from "../components/common/navBar";
-import Works from "../components/homepage/works";
-import AllProjects from "../components/projects/allProjects";
-import INFO from "../data/user";
+import Footer from "../components/common/footer";
 
-const Homepage = () => {
-	useEffect(() => {
-		window.scrollTo(0, 0);
-	}, []);
+const ContactForm = () => {
+	const [formData, setFormData] = useState({
+		name: "",
+		email: "",
+		message: "",
+	});
+
+	const handleChange = (e) => {
+		setFormData({ ...formData, [e.target.name]: e.target.value });
+	};
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+
+		// Send email using EmailJS
+		emailjs
+			.sendForm(
+				process.env.REACT_APP_EMAILJS_SERVICE_ID,
+				process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+				e.target,
+				process.env.REACT_APP_EMAILJS_USER_ID
+			)
+			.then(
+				(result) => {
+					console.log("Email sent successfully:", result.text);
+					// Add any success handling here (e.g., display a success message)
+					alert("Your message has been sent successfully!");
+				},
+				(error) => {
+					console.error("Error sending email:", error.text);
+					// Add error handling here (e.g., display an error message)
+					alert(
+						"Oops! Something went wrong. Please try again later."
+					);
+				}
+			);
+
+		// Clear form fields after submission
+		setFormData({
+			name: "",
+			email: "",
+			message: "",
+		});
+	};
 
 	return (
-		<>
-			<Helmet>
-				<title>{INFO.main.title}</title>
-				<meta name="keywords" />
-			</Helmet>
+		<div className="flex flex-col min-h-screen">
+			<NavBar />
+			<div className="container mx-auto px-4 py-8 flex-grow">
+				<h1 className="text-3xl font-bold mb-6 mt-12">Contact Me</h1>
 
-			<div className="mt-8 min-h-screen flex flex-col">
-				<NavBar active="home" />
-				<div className="flex-1">
-					<div className="content-wrapper mt-10">
-						<div className="homepage-container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-							{/* Move the title below the navigation bar */}
-							<div className="text-4xl font-bold text-center my-10">
-								{INFO.homepage.title}
-							</div>
-
-							<div className="flex flex-col md:flex-row">
-								<div className="w-full md:w-1/2 mb-8 md:mb-0">
-									<div className="text-lg mb-4">
-										{INFO.homepage.description}
-									</div>
-								</div>
-
-								{/* Social links container */}
-								<div className="w-full md:w-1/2 flex justify-center md:justify-end">
-									<div className="flex">
-										<a
-											href={INFO.socials.github}
-											target="_blank"
-											rel="noreferrer"
-											className="mr-4"
-										>
-											<FontAwesomeIcon
-												icon={faGithub}
-												className="text-2xl text-gray-500 hover:text-gray-700"
-											/>
-										</a>
-										<a
-											href={`mailto:${INFO.main.email}`}
-											target="_blank"
-											rel="noreferrer"
-										>
-											<FontAwesomeIcon
-												icon={faMailBulk}
-												className="text-2xl text-gray-500 hover:text-gray-700"
-											/>
-										</a>
-									</div>
-								</div>
-							</div>
-
-							{/* Works */}
-							<div className="mt-12">
-								<Works />
-							</div>
-						</div>
+				<form onSubmit={handleSubmit} className="max-w-lg">
+					<div className="mb-4">
+						<label className="block text-gray-700 text-sm font-bold mb-2">
+							Name
+						</label>
+						<input
+							type="text"
+							name="name"
+							value={formData.name}
+							onChange={handleChange}
+							required
+							className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
+						/>
 					</div>
-				</div>
-				<div className="page-footer mt-auto">
-					<Footer />
-				</div>
+					<div className="mb-4">
+						<label className="block text-gray-700 text-sm font-bold mb-2">
+							Email
+						</label>
+						<input
+							type="email"
+							name="email"
+							value={formData.email}
+							onChange={handleChange}
+							required
+							className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
+						/>
+					</div>
+					<div className="mb-4">
+						<label className="block text-gray-700 text-sm font-bold mb-2">
+							Message
+						</label>
+						<textarea
+							name="message"
+							value={formData.message}
+							onChange={handleChange}
+							required
+							className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
+						></textarea>
+					</div>
+					<button
+						type="submit"
+						className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+					>
+						Send Message
+					</button>
+				</form>
 			</div>
-		</>
+			<div className="relative">
+				<Footer />
+			</div>
+		</div>
 	);
 };
 
-export default Homepage;
+export default ContactForm;
