@@ -10,6 +10,7 @@ const AllProjects = () => {
 					<Project
 						title={project.title}
 						description={formatDescription(project.description)}
+						languages={project.languages}
 						link={project.link}
 						linkText={project.linkText}
 					/>

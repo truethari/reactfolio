@@ -14,15 +14,16 @@ const Project = (props) => {
 				<Link to={link}>
 					<div className="project-container">
 						<div className="project-title">{title}</div>
-						<div className="project-languages">{languages}</div>
+						<span className="project-subtext">
+							Languages:{languages}
+						</span>
+
 						<div className="project-description">{description}</div>
 						<div className="project-link">
 							<div className="project-link-icon">
 								<FontAwesomeIcon icon={faLink} />
 							</div>
 							<div className="project-link-text">{linkText}</div>
-							{/* Todo - NEED TO IMPLEMENT THIS */}
-							<div className="project-link-text">{languages}</div>
 						</div>
 					</div>
 				</Link>
