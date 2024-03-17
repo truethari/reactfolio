@@ -26,6 +26,7 @@ const INFO = {
 		{
 			title: "Time Master Application",
 			description: `
+				Lanaguages used: NodeJS , Express , MongoDB
 				Created a user-centric application for employees to manage schedules, clock in/out, and request time off.
 				Enriched functionality by implementing manager features for efficient employee management.`,
 			linkText: "Time Master",
@@ -35,6 +36,7 @@ const INFO = {
 		{
 			title: "CarHub",
 			description: `
+				Languages: NodeJS , Express
 				Developed a web-based application enabling users to sort, filter, and search for specific cars by year and fuel mileage. 
 				Results feature detailed descriptions and images for enhanced user engagement.
 			`,
