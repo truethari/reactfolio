@@ -4,7 +4,7 @@ import INFO from "../../data/user";
 
 const AllProjects = () => {
 	return (
-		<div className="bg-white shadow-md rounded-md p-6">
+		<div className="grid grid-cols-1 gap-6 lg:grid-cols-2 xl:grid-cols-3">
 			{INFO.projects.map((project, index) => (
 				<div className="mb-6" key={index}>
 					<Project

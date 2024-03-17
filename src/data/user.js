@@ -1,6 +1,6 @@
 const INFO = {
 	main: {
-		title: "Reactfolio by truethari",
+		title: "Ravkeerat Singh ",
 		name: "Ravkeerat Singh",
 		email: "ravkeerat_singh@outlook.com",
 	},
@@ -26,10 +26,8 @@ const INFO = {
 		{
 			title: "Time Master Application",
 			description: `
-				- Created a user-centric application for employees to manage schedules, clock
-				in/out, and request time off
-				- Enriched functionality by implementing manager features for efficient
-				employee management.`,
+				Created a user-centric application for employees to manage schedules, clock in/out, and request time off.
+				Enriched functionality by implementing manager features for efficient employee management.`,
 			linkText: "Time Master",
 			link: "https://time-master.herokuapp.com/",
 		},
@@ -37,27 +35,11 @@ const INFO = {
 		{
 			title: "CarHub",
 			description: `
-				• Developed a web-based application enabling users to sort, filter, and search for
-				specific cars by year and fuel mileage. Results feature detailed descriptions and
-				images for enhanced user engagement.
-				• Implemented debug points to ensure seamless functionality and address
-				any potential issues promptly, maintaining the application's reliability and
-				performance.`,
-
+				Developed a web-based application enabling users to sort, filter, and search for specific cars by year and fuel mileage. 
+				Results feature detailed descriptions and images for enhanced user engagement.
+			`,
 			linkText: "Car Hub",
 			link: "https://car-hub-nine-rust.vercel.app/",
-		},
-		{
-			title: "Landing Page",
-			description: `The landing page includes the following sections:
-				- Services
-				- Hero
-				- Features
-				- How to Use
-				- Header and Footer
-				- Pricing`,
-			linkText: "Landing Page",
-			link: "https://landing-page-ui-s1e2-git-main-ravkeerat02.vercel.app/",
 		},
 	],
 };
