@@ -18,6 +18,7 @@ const Works = () => {
 							<div className="work-subtitle">
 								Website Developer
 							</div>
+							<div className="work-location">Remote</div>
 							<div className="work-duration">2023 - Present</div>
 						</div>
 
@@ -25,13 +26,18 @@ const Works = () => {
 							<div className="work-title">
 								Arcturus Technologies
 							</div>
+							<div className="work-location">Remote</div>
 							<div className="work-subtitle">Intern</div>
+
 							<div className="work-duration">2023 - 2023</div>
 						</div>
 						<div className="work">
 							<div className="work-title">EXL</div>
 							<div className="work-subtitle">Intern</div>
-							<div className="work-duration">2023 - 2023</div>
+							<div className="work-location">
+								Manila , Philippines
+							</div>
+							<div className="work-duration">2021 - 2021</div>
 						</div>
 					</div>
 				}
