@@ -56,7 +56,7 @@ const INFO = {
 			description: `
 				Randomly Generated Quotes with the help of <a href="https://api.quotable.io/random" target="_blank" rel="noopener noreferrer">Quotable API</a>.
 				Ability to share the quote on twitter. 
-				Ability to speak the quote `,s
+				Ability to speak the quote `,
 			languages: "JavaScript , HTML , CSS",
 			linkText: "Quote Generator",
 			link: "https://ravkeerat02.github.io/Quote-generator/",
