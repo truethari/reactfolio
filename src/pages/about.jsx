@@ -44,6 +44,15 @@ const About = () => {
 
 						<div className="about-left-side">
 							<div className="about-socials">
+								<button className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+									<a
+										href="https://drive.google.com/file/d/1BebjjGFYzl-FyIufBPcpiZ2m-NUTLVir/view?usp=drive_link "
+										target="_blank"
+										rel="noreferrer"
+									>
+										Download Resume
+									</a>
+								</button>
 								<Socials />
 								{/* Add a link to download CV below the LinkedIn logo */}
 							</div>
