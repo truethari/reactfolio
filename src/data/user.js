@@ -1,6 +1,6 @@
 const INFO = {
 	main: {
-		title: "Ravkeerat Singh ",
+		title: "Ravkeerat Singh",
 		name: "Ravkeerat Singh",
 		email: "ravkeerat_singh@outlook.com",
 	},
@@ -11,7 +11,7 @@ const INFO = {
 	},
 
 	homepage: {
-		title: "Front End Developer ",
+		title: "Front End Developer",
 		description:
 			"Motivated front-end developer with expertise in HTML, CSS, and JavaScript. Seeking opportunities to contribute creative solutions and enhance skills in a professional, collaborative environment.",
 	},
@@ -37,13 +37,43 @@ const INFO = {
 			title: "CarHub",
 			description: `
 				Developed a web-based application enabling users to sort, filter, and search for specific cars by year and fuel mileage. 
-				Results feature detailed descriptions and images for enhanced user engagement.
-			`,
+				Results feature detailed descriptions and images for enhanced user engagement.`,
 			languages: "NodeJS , Express , ReactJS , NextJS",
 			linkText: "Car Hub",
 			link: "https://car-hub-nine-rust.vercel.app/",
 		},
+		{
+			title: "Anime Vault",
+			description: `
+				Developed a web-based application that utilizes the <a href="https://shikimori.one/api/doc" target="_blank" rel="noopener noreferrer">Shikimori API</a> to display anime shows.
+				Implemented smooth animations for seamless scrolling.`,
+			languages: "TypeScript , JavaScript ",
+			linkText: "Anime Vault",
+			link: "https://anime-vault-try.vercel.app/",
+		},
+		{
+			title: "Quote Generator",
+			description: `
+				Randomly Generated Quotes with the help of <a href="https://api.quotable.io/random" target="_blank" rel="noopener noreferrer">Quotable API</a>.
+				Ability to share the quote on twitter. 
+				Ability to speak the quote `,s
+			languages: "JavaScript , HTML , CSS",
+			linkText: "Quote Generator",
+			link: "https://ravkeerat02.github.io/Quote-generator/",
+		},
 	],
 };
+
+function replaceAPIText(description) {
+	// Replace both specific HTML tags with the desired text
+	return description.replace(
+		/<a [^>]*href="(?:https:\/\/shikimori\.one\/api\/doc|https:\/\/api\.quotable\.io\/random)"[^>]*>[^<]*<\/a>/gi,
+		"API"
+	);
+}
+
+INFO.projects.forEach((project) => {
+	project.description = replaceAPIText(project.description);
+});
 
 export default INFO;
