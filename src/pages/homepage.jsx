@@ -6,7 +6,6 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
 import Works from "../components/homepage/works";
-import AllProjects from "../components/projects/allProjects";
 import INFO from "../data/user";
 
 const Homepage = () => {
@@ -26,7 +25,6 @@ const Homepage = () => {
 				<div className="flex-1">
 					<div className="content-wrapper mt-10">
 						<div className="homepage-container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-							{/* Move the title below the navigation bar */}
 							<div className="text-4xl font-bold text-center my-10">
 								{INFO.homepage.title}
 							</div>
@@ -63,7 +61,7 @@ const Homepage = () => {
 								</div>
 							</div>
 
-							{/* Works */}
+							{/* Work */}
 							<div className="mt-12">
 								<Works />
 							</div>
