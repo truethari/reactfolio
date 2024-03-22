@@ -13,6 +13,19 @@
 	top: 4vh;
 	z-index: 999;
 }
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+.project-section {
+	/* Your project section styles */
+}
+
+.view-more-link {
+	align-self: flex-end; /* Aligns the GitHub link to the end of the container */
+	margin-top: 20px; /* Adjust as needed */
+}
 
 .projects-container {
 	display: flex;
@@ -29,5 +42,19 @@
 
 	.projects-project {
 		width: calc(100% / 2);
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.container {
+		position: relative;
+	}
+
+	.view-more-link {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		margin-top: 10px; /* Adjust as needed */
 	}
 }

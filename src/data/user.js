@@ -61,6 +61,25 @@ const INFO = {
 			linkText: "Quote Generator",
 			link: "https://ravkeerat02.github.io/Quote-generator/",
 		},
+		{
+			title: "Traveligo - Landing Page Only",
+			description: `
+				Crafted using the power of TypeScript, Next.js, and ReactJS, ensuring robustness and efficiency.
+				Delivers a contemporary and adaptive interface, elevating the user journey to new heights of convenience and satisfaction. `,
+			languages: "TypeScript , ReactJS , NextJs ",
+			linkText: "Traveligo",
+			link: "https://traveligo-n8bwg4z2h-ravkeerat02.vercel.app/",
+		},
+		{
+			title: "Tic Tac Toe",
+			description: `
+				Developed using HTML, CSS, and JavaScript for a lightweight and browser-compatible gaming experience.
+				Implements features like automatic game reset upon completion, ensuring continuous enjoyment without interruptions.
+				Enhances user engagement by dynamically displaying the score and announcing the winner at the conclusion of each game, fostering a competitive and immersive atmosphere.`,
+			languages: "HTML , CSSS , JS ",
+			linkText: "Tic Tac Toe",
+			link: "https://tic-tac-toe-liard-zeta.vercel.app/",
+		},
 	],
 };
 
