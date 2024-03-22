@@ -22,6 +22,8 @@
 	/* Your project section styles */
 }
 
+/* Todo - align with smaller devices */
+
 .view-more-link {
 	align-self: flex-end; /* Aligns the GitHub link to the end of the container */
 	margin-top: 20px; /* Adjust as needed */
