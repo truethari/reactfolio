@@ -25,7 +25,6 @@ const ContactForm = () => {
 				e.target,
 				"iJ5X1Aaus43y08qUB"
 			)
-
 			.then(
 				(result) => {
 					console.log("Email sent successfully:", result.text);
@@ -33,7 +32,6 @@ const ContactForm = () => {
 				},
 				(error) => {
 					console.error("Error sending email:", error.text);
-
 					alert(
 						"Oops! Something went wrong. Please try again later."
 					);
@@ -48,9 +46,9 @@ const ContactForm = () => {
 	};
 
 	return (
-		<div>
+		<div className="flex flex-col min-h-screen">
 			<NavBar />
-			<div className="container mx-auto px-4 py-8">
+			<div className="container mx-auto px-4 py-8 flex-1">
 				<h1 className="text-3xl font-bold mb-6 my-10">Contact Me</h1>
 
 				<form onSubmit={handleSubmit} className="max-w-lg">
@@ -99,10 +97,8 @@ const ContactForm = () => {
 						Send Message
 					</button>
 				</form>
-				<div className="page-footer mt-auto relative">
-					<Footer />
-				</div>
 			</div>
+			<Footer />
 		</div>
 	);
 };

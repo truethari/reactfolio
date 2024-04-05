@@ -20,8 +20,10 @@ const Homepage = () => {
 				<meta name="keywords" />
 			</Helmet>
 
-			<div className="mt-8 min-h-screen flex flex-col">
-				<NavBar active="home" />
+			<div className="min-h-screen flex flex-col">
+				<div className="mt-8">
+					<NavBar active="home" />
+				</div>
 				<div className="flex-1">
 					<div className="content-wrapper mt-10">
 						<div className="homepage-container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -68,7 +70,9 @@ const Homepage = () => {
 						</div>
 					</div>
 				</div>
-				<div className="page-footer mt-auto">
+				<hr className="border-t border-gray-300" />{" "}
+				{/* Line before footer */}
+				<div>
 					<Footer />
 				</div>
 			</div>

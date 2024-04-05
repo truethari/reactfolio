@@ -3,7 +3,7 @@
 .footer {
 	display: flex;
 	padding-top: 25px;
-	margin-top: 50px;
+	margin-top: 25px;
 	padding-bottom: 25px;
 	align-items: center;
 }
@@ -11,6 +11,7 @@
 .footer-links,
 .footer-credits {
 	flex-basis: 50%;
+	margin-top: 10px;
 }
 
 .footer-links {

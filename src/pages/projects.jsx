@@ -30,47 +30,37 @@ const Projects = () => {
 					content={currentSEO.keywords.join(", ")}
 				/>
 			</Helmet>
+			<NavBar active="projects" />
+			<div className="content-wrapper">
+				<div className="projects-container">
+					<div className="title projects-title">Projects</div>
 
-			<div className="page-content">
-				<NavBar active="projects" />
-				<div className="content-wrapper">
-					<div className="projects-container">
-						<div className="title projects-title">Projects</div>
-
-						<div className="subtitle projects-subtitle">
-							Here, you'll find a curated list of projects I've
-							developed using the{" "}
-							<strong>
-								MERN (MongoDB, Express.js, React.js, Node.js)
-								stack
-							</strong>
-							. These projects showcase my proficiency in building
-							full-stack web applications, employing modern
-							technologies and best practices. One of the notable
-							projects is my{" "}
-							<strong>Capstone project, "Time Master"</strong>,
-							which demonstrates my skills in creating
-							user-centric applications for efficient time
-							management.
-						</div>
-
-						<div className="projects-list">
-							<AllProjects />
-						</div>
-						<br></br>
-						<br></br>
-						<a
-							href={INFO.socials.github}
-							className="view-more-link"
-						>
-							View More <FontAwesomeIcon icon={faGithub} />
-						</a>
+					<div className="subtitle projects-subtitle">
+						Here, you'll find a curated list of projects I've
+						developed using the{" "}
+						<strong>
+							MERN (MongoDB, Express.js, React.js, Node.js) stack
+						</strong>
+						. These projects showcase my proficiency in building
+						full-stack web applications, employing modern
+						technologies and best practices. One of the notable
+						projects is my{" "}
+						<strong>Capstone project, "Time Master"</strong>, which
+						demonstrates my skills in creating user-centric
+						applications for efficient time management.
 					</div>
-					<div className="page-footer">
-						<Footer />
+
+					<div className="projects-list">
+						<AllProjects />
 					</div>
+					<br></br>
+					<br></br>
+					<a href={INFO.socials.github} className="view-more-link">
+						View More <FontAwesomeIcon icon={faGithub} />
+					</a>
 				</div>
 			</div>
+			<Footer /> {/* Include the Footer component */}
 		</React.Fragment>
 	);
 };
