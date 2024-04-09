@@ -1,50 +1,60 @@
 import React from "react";
-import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 
-import Card from "../common/card";
+const Timeline = () => {
+	const timelineData = [
+		{
+			date: "2021 - 2021",
+			title: "Intern",
+			description: [
+				"Worked on various projects",
+				"Gained valuable insights into the industry",
+			],
+		},
+		{
+			date: "2023 - 2023",
+			title: "Intern",
+			description: [
+				"Gained hands-on experience in software development",
+				"Learned about industry best practices",
+			],
+		},
+		{
+			date: "2023 - Present",
+			title: "Website Developer",
+			description: [
+				"Responsible for developing and maintaining websites",
+				"Used modern web technologies",
+			],
+		},
+	];
 
-import "./styles/works.css";
+	const reversedTimelineData = timelineData.slice().reverse();
 
-const Works = () => {
 	return (
-		<div className="works">
-			<Card
-				icon={faBriefcase}
-				title="Work"
-				body={
-					<div className="works-body">
-						<div className="work">
-							<div className="work-title">Kiran Media Inc</div>
-							<div className="work-subtitle">
-								Website Developer
-							</div>
-							<div className="work-location">Remote</div>
-							<div className="work-duration">2023 - Present</div>
+		<div className="flex flex-col items-center">
+			<div className="flex flex-row justify-center items-center">
+				<div className="w-1/2 h-1 bg-gray-300"></div>
+				{reversedTimelineData.map((item, index) => (
+					<div
+						key={index}
+						className="flex flex-col items-center mx-4"
+					>
+						<div className="bg-gray-300 text-gray-700 py-1 px-3 rounded-lg text-sm">
+							{item.date}
 						</div>
-
-						<div className="work">
-							<div className="work-title">
-								Arcturus Technologies
-							</div>
-							<div className="work-location">Remote</div>
-							<div className="work-subtitle">Intern</div>
-							<div className="work-duration">2023 - 2023</div>
-						</div>
-						<div className="work">
-							<div className="work-title">
-								Exlservice Philippines, Inc
-							</div>
-							<div className="work-subtitle">Intern</div>
-							<div className="work-location">
-								Manila , Philippines
-							</div>
-							<div className="work-duration">2021 - 2021</div>
+						<div className="bg-white shadow-md border border-gray-200 rounded-lg p-4 mt-4">
+							<div className="font-bold mb-1">{item.title}</div>
+							<ul className="list-disc pl-6">
+								{item.description.map((desc, index) => (
+									<li key={index}>{desc}</li>
+								))}
+							</ul>
 						</div>
 					</div>
-				}
-			/>
+				))}
+			</div>
 		</div>
 	);
 };
 
-export default Works;
+export default Timeline;

@@ -21,52 +21,50 @@ const Homepage = () => {
 			</Helmet>
 
 			<div className="min-h-screen flex flex-col">
-				<div className="mt-8">
+				<div>
 					<NavBar active="home" />
 				</div>
 				<div className="flex-1">
-					<div className="content-wrapper mt-10">
-						<div className="homepage-container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-							<div className="text-4xl font-bold text-center my-10">
-								{INFO.homepage.title}
-							</div>
+					<div className="content-wrapper mt-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+						<div className="text-4xl font-bold text-center my-10">
+							{INFO.homepage.title}
+						</div>
 
-							<div className="flex flex-col md:flex-row">
-								<div className="w-full md:w-1/2 mb-8 md:mb-0">
-									<div className="text-lg mb-4">
-										{INFO.homepage.description}
-									</div>
-									{/* Social links */}
-									<div className="flex justify-center">
-										<a
-											href={INFO.socials.github}
-											target="_blank"
-											rel="noreferrer"
-											className="mr-4"
-										>
-											<FontAwesomeIcon
-												icon={faGithub}
-												className="text-2xl text-gray-500 hover:text-gray-700"
-											/>
-										</a>
-										<a
-											href={`mailto:${INFO.main.email}`}
-											target="_blank"
-											rel="noreferrer"
-										>
-											<FontAwesomeIcon
-												icon={faMailBulk}
-												className="text-2xl text-gray-500 hover:text-gray-700"
-											/>
-										</a>
-									</div>
+						<div className="flex flex-col md:flex-row items-center justify-center md:justify-between">
+							<div className="w-full md:w-1/2 mb-8 md:mb-0">
+								<div className="text-lg mb-4 text-center md:text-left">
+									{INFO.homepage.description}
+								</div>
+								{/* Social links */}
+								<div className="flex justify-center md:justify-start">
+									<a
+										href={INFO.socials.github}
+										target="_blank"
+										rel="noreferrer"
+										className="mr-4"
+									>
+										<FontAwesomeIcon
+											icon={faGithub}
+											className="text-2xl text-gray-500 hover:text-gray-700"
+										/>
+									</a>
+									<a
+										href={`mailto:${INFO.main.email}`}
+										target="_blank"
+										rel="noreferrer"
+									>
+										<FontAwesomeIcon
+											icon={faMailBulk}
+											className="text-2xl text-gray-500 hover:text-gray-700"
+										/>
+									</a>
 								</div>
 							</div>
+						</div>
 
-							{/* Work */}
-							<div className="mt-12">
-								<Works />
-							</div>
+						{/* Work */}
+						<div className="mt-12">
+							<Works />
 						</div>
 					</div>
 				</div>

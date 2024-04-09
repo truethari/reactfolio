@@ -13,7 +13,7 @@ const INFO = {
 	homepage: {
 		title: "Front End Developer",
 		description:
-			"Motivated front-end developer with expertise in HTML, CSS, and JavaScript. Seeking opportunities to contribute creative solutions and enhance skills in a professional, collaborative environment.",
+			"As a motivated front-end developer proficient in HTML, CSS, and JavaScript, I am dedicated to delivering immersive digital experiences. With a keen eye for detail and a passion for innovation, I strive to contribute creative solutions that elevate user engagement and drive business success. I am eager to collaborate in a professional environment where teamwork and continuous learning are valued, enabling me to further enhance my skills and contribute to impactful projects.",
 	},
 
 	about: {
