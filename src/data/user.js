@@ -1,84 +1,98 @@
 const INFO = {
 	main: {
-		title: "Reactfolio by truethari",
-		name: "Tharindu N.",
-		email: "mail@tharindu.dev",
-		logo: "../logo.png",
+		title: "Ravkeerat Singh",
+		name: "Ravkeerat Singh",
+		email: "ravkeerat_singh@outlook.com",
 	},
 
 	socials: {
-		twitter: "https://twitter.com/",
-		github: "https://github.com/",
-		linkedin: "https://linkedin.com/",
-		instagram: "https://instagram.com/",
-		stackoverflow: "https://stackoverflow.com/",
-		facebook: "https://facebook.com/",
+		github: "https://github.com/Ravkeerat02",
+		linkedin: "https://www.linkedin.com/in/ravkeeratsingh/",
 	},
 
 	homepage: {
-		title: "Full-stack web and mobile app developer, and amateur astronaut.",
+		title: "Front End Developer",
 		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards. I am always looking for new challenges and opportunities to grow as a developer.",
+			"As a motivated front-end developer proficient in HTML, CSS, and JavaScript, I am dedicated to delivering immersive digital experiences. With a keen eye for detail and a passion for innovation, I strive to contribute creative solutions that elevate user engagement and drive business success. I am eager to collaborate in a professional environment where teamwork and continuous learning are valued, enabling me to further enhance my skills and contribute to impactful projects.",
 	},
 
 	about: {
-		title: "I’m Tharindu N. I live in Sri Lanka, where I design the future.",
+		title: "Ravkeerat Singh",
 		description:
-			"I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to. If you're interested in any of the projects I've worked on, please feel free to check out the code and suggest any improvements or enhancements you might have in mind. Collaborating with others is a great way to learn and grow, and I'm always open to new ideas and feedback.",
-	},
-
-	articles: {
-		title: "I'm passionate about pushing the boundaries of what's possible and inspiring the next generation of innovators.",
-		description:
-			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
+			"I'm Ravkeerat Singh, a recent graduate passionate about front-end development. Proficient in HTML, CSS, and React.js, I bring a keen eye for design and a drive for creating engaging user experiences. Eager to apply my skills in real-world projects, I thrive in collaborative environments and am committed to delivering polished, innovative solutions. Let's connect and explore how I can contribute to your team!",
 	},
 
 	projects: [
 		{
-			title: "Project 1",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "https://github.com",
+			title: "Time Master Application",
+			description: `
+				Created a user-centric application for employees to manage schedules, clock in/out, and request time off.
+				Enriched functionality by implementing manager features for efficient employee management.`,
+			linkText: "Time Master",
+			languages: "ExpressJS , NodeJs , MongoDb",
+			link: "https://time-master.herokuapp.com/",
 		},
 
 		{
-			title: "Project 2",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
-			linkText: "View Project",
-			link: "https://github.com",
+			title: "CarHub",
+			description: `
+				Developed a web-based application enabling users to sort, filter, and search for specific cars by year and fuel mileage. 
+				Results feature detailed descriptions and images for enhanced user engagement.`,
+			languages: "NodeJS , Express , ReactJS , NextJS",
+			linkText: "Car Hub",
+			link: "https://car-hub-nine-rust.vercel.app/",
 		},
-
 		{
-			title: "Project 3",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
-			linkText: "View Project",
-			link: "https://github.com",
+			title: "Anime Vault",
+			description: `
+				Developed a web-based application that utilizes the <a href="https://shikimori.one/api/doc" target="_blank" rel="noopener noreferrer">Shikimori API</a> to display anime shows.
+				Implemented smooth animations for seamless scrolling.`,
+			languages: "TypeScript , JavaScript ",
+			linkText: "Anime Vault",
+			link: "https://anime-vault-try.vercel.app/",
 		},
-
 		{
-			title: "Project 4",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "https://github.com",
+			title: "Quote Generator",
+			description: `
+				Randomly Generated Quotes with the help of <a href="https://api.quotable.io/random" target="_blank" rel="noopener noreferrer">Quotable API</a>.
+				Ability to share the quote on twitter. 
+				Ability to speak the quote `,
+			languages: "JavaScript , HTML , CSS",
+			linkText: "Quote Generator",
+			link: "https://ravkeerat02.github.io/Quote-generator/",
 		},
-
 		{
-			title: "Project 5",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "https://github.com",
+			title: "Traveligo - Landing Page Only",
+			description: `
+				Crafted using the power of TypeScript, Next.js, and ReactJS, ensuring robustness and efficiency.
+				Delivers a contemporary and adaptive interface, elevating the user journey to new heights of convenience and satisfaction. `,
+			languages: "TypeScript , ReactJS , NextJs ",
+			linkText: "Traveligo",
+			link: "https://traveligo-n8bwg4z2h-ravkeerat02.vercel.app/",
+		},
+		{
+			title: "Tic Tac Toe",
+			description: `
+				Developed using HTML, CSS, and JavaScript for a lightweight and browser-compatible gaming experience.
+				Implements features like automatic game reset upon completion, ensuring continuous enjoyment without interruptions.
+				Enhances user engagement by dynamically displaying the score and announcing the winner at the conclusion of each game, fostering a competitive and immersive atmosphere.`,
+			languages: "HTML , CSSS , JS ",
+			linkText: "Tic Tac Toe",
+			link: "https://tic-tac-toe-liard-zeta.vercel.app/",
 		},
 	],
 };
+
+function replaceAPIText(description) {
+	// Replace both specific HTML tags with the desired text
+	return description.replace(
+		/<a [^>]*href="(?:https:\/\/shikimori\.one\/api\/doc|https:\/\/api\.quotable\.io\/random)"[^>]*>[^<]*<\/a>/gi,
+		"API"
+	);
+}
+
+INFO.projects.forEach((project) => {
+	project.description = replaceAPIText(project.description);
+});
 
 export default INFO;

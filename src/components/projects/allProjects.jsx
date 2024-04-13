@@ -1,26 +1,36 @@
 import React from "react";
-
 import Project from "./project";
-
 import INFO from "../../data/user";
-
-import "./styles/allProjects.css";
 
 const AllProjects = () => {
 	return (
-		<div className="all-projects-container">
+		<div className="grid grid-cols-1 gap-6 lg:grid-cols-2 xl:grid-cols-3">
 			{INFO.projects.map((project, index) => (
-				<div className="all-projects-project" key={index}>
+				<div className="mb-6" key={index}>
 					<Project
-						logo={project.logo}
 						title={project.title}
-						description={project.description}
-						linkText={project.linkText}
+						description={formatDescription(project.description)}
+						languages={project.languages}
 						link={project.link}
+						linkText={project.linkText}
 					/>
 				</div>
 			))}
 		</div>
+	);
+};
+
+// Function to format the description as bullet points
+const formatDescription = (description) => {
+	const points = description
+		.split("\n")
+		.filter((point) => point.trim() !== "");
+	return (
+		<ul className="list-disc ml-6">
+			{points.map((point, index) => (
+				<li key={index}>{point}</li>
+			))}
+		</ul>
 	);
 };
 

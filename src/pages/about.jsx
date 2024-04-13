@@ -1,15 +1,10 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
-
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
-import Logo from "../components/common/logo";
 import Socials from "../components/about/socials";
-
 import INFO from "../data/user";
 import SEO from "../data/seo";
-
-import "./styles/about.css";
 
 const About = () => {
 	useEffect(() => {
@@ -29,40 +24,34 @@ const About = () => {
 				/>
 			</Helmet>
 
-			<div className="page-content">
-				<NavBar active="about" />
-				<div className="content-wrapper">
-					<div className="about-logo-container">
-						<div className="about-logo">
-							<Logo width={46} />
-						</div>
-					</div>
+			<NavBar active="about" />
 
-					<div className="about-container">
-						<div className="about-main">
-							<div className="about-right-side">
-								<div className="title about-title">
-									{INFO.about.title}
-								</div>
-
-								<div className="subtitle about-subtitle">
-									{INFO.about.description}
-								</div>
-							</div>
-
-							<div className="about-left-side">
-								<div className="about-image-container">
-									<div className="about-image-wrapper">
-										<img
-											src="about.jpg"
-											alt="about"
-											className="about-image"
-										/>
+			<div className="flex flex-col min-h-screen">
+				<div className="mt-20 flex-grow">
+					<div className="content-wrapper">
+						<div className="about-container">
+							<div className="about-main flex">
+								<div className="about-right-side flex flex-col">
+									<div className="title about-title">
+										{INFO.about.title}
+									</div>
+									<div className="subtitle about-subtitle">
+										{INFO.about.description}
 									</div>
 								</div>
-
-								<div className="about-socials">
-									<Socials />
+								<div className="about-left-side">
+									<div className="about-socials">
+										<button className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+											<a
+												href="https://drive.google.com/file/d/1BebjjGFYzl-FyIufBPcpiZ2m-NUTLVir/view?usp=drive_link"
+												target="_blank"
+												rel="noreferrer"
+											>
+												Download Resume
+											</a>
+										</button>
+										<Socials />
+									</div>
 								</div>
 							</div>
 						</div>
@@ -70,9 +59,9 @@ const About = () => {
 							<Socials />
 						</div>
 					</div>
-					<div className="page-footer">
-						<Footer />
-					</div>
+				</div>
+				<div className="page-footer">
+					<Footer />
 				</div>
 			</div>
 		</React.Fragment>

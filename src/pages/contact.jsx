@@ -1,91 +1,106 @@
-import React, { useEffect } from "react";
-import { Helmet } from "react-helmet";
-
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
-import Logo from "../components/common/logo";
-import Socials from "../components/about/socials";
 
-import INFO from "../data/user";
-import SEO from "../data/seo";
+const ContactForm = () => {
+	const [formData, setFormData] = useState({
+		name: "",
+		email: "",
+		message: "",
+	});
 
-import "./styles/contact.css";
+	const handleChange = (e) => {
+		setFormData({ ...formData, [e.target.name]: e.target.value });
+	};
 
-const Contact = () => {
-	useEffect(() => {
-		window.scrollTo(0, 0);
-	}, []);
+	const handleSubmit = (e) => {
+		e.preventDefault();
 
-	const currentSEO = SEO.find((item) => item.page === "contact");
+		// Send email using EmailJS
+		emailjs
+			.sendForm(
+				"service_s4uzwtb",
+				"template_v8g6das",
+				e.target,
+				"iJ5X1Aaus43y08qUB"
+			)
+			.then(
+				(result) => {
+					console.log("Email sent successfully:", result.text);
+					alert("Your message has been sent successfully!");
+				},
+				(error) => {
+					console.error("Error sending email:", error.text);
+					alert(
+						"Oops! Something went wrong. Please try again later."
+					);
+				}
+			);
+
+		setFormData({
+			name: "",
+			email: "",
+			message: "",
+		});
+	};
 
 	return (
-		<React.Fragment>
-			<Helmet>
-				<title>{`Contact | ${INFO.main.title}`}</title>
-				<meta name="description" content={currentSEO.description} />
-				<meta
-					name="keywords"
-					content={currentSEO.keywords.join(", ")}
-				/>
-			</Helmet>
+		<div className="flex flex-col min-h-screen">
+			<NavBar />
+			<div className="container mx-auto px-4 py-8 flex-1">
+				<h1 className="text-3xl font-bold mb-6 my-10">Contact Me</h1>
 
-			<div className="page-content">
-				<NavBar active="contact" />
-				<div className="content-wrapper">
-					<div className="contact-logo-container">
-						<div className="contact-logo">
-							<Logo width={46} />
-						</div>
+				<form onSubmit={handleSubmit} className="max-w-lg">
+					<div className="mb-4">
+						<label className="block text-gray-700 text-sm font-bold mb-2">
+							Name
+						</label>
+						<input
+							type="text"
+							name="name"
+							value={formData.name}
+							onChange={handleChange}
+							required
+							className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
+						/>
 					</div>
-
-					<div className="contact-container">
-						<div className="title contact-title">
-							Let's Get in Touch: Ways to Connect with Me
-						</div>
-
-						<div className="subtitle contact-subtitle">
-							Thank you for your interest in getting in touch with
-							me. I welcome your feedback, questions, and
-							suggestions. If you have a specific question or
-							comment, please feel free to email me directly at
-							&nbsp;{" "}
-							<a href={`mailto:${INFO.main.email}`}>
-								{INFO.main.email}
-							</a>
-							. I make an effort to respond to all messages within
-							24 hours, although it may take me longer during busy
-							periods. Alternatively, you can use the contact form
-							on my website to get in touch. Simply fill out the
-							required fields and I'll get back to you as soon as
-							possible. Finally, if you prefer to connect on
-							social media, you can find me on{" "}
-							<a
-								href={INFO.socials.instagram}
-								target="_blank"
-								rel="noreferrer"
-							>
-								{INFO.socials.instagram}
-							</a>
-							. I post regular updates and engage with my
-							followers there, so don't hesitate to reach out.
-							Thanks again for your interest, and I look forward
-							to hearing from you!
-						</div>
+					<div className="mb-4">
+						<label className="block text-gray-700 text-sm font-bold mb-2">
+							Email
+						</label>
+						<input
+							type="email"
+							name="email"
+							value={formData.email}
+							onChange={handleChange}
+							required
+							className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
+						/>
 					</div>
-
-					<div className="socials-container">
-						<div className="contact-socials">
-							<Socials />
-						</div>
+					<div className="mb-4">
+						<label className="block text-gray-700 text-sm font-bold mb-2">
+							Message
+						</label>
+						<textarea
+							name="message"
+							value={formData.message}
+							onChange={handleChange}
+							required
+							className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
+						></textarea>
 					</div>
-
-					<div className="page-footer">
-						<Footer />
-					</div>
-				</div>
+					<button
+						type="submit"
+						className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+					>
+						Send Message
+					</button>
+				</form>
 			</div>
-		</React.Fragment>
+			<Footer />
+		</div>
 	);
 };
 
-export default Contact;
+export default ContactForm;

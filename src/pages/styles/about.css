@@ -68,7 +68,14 @@
 .about-socials-mobile {
 	display: none;
 }
+.page-content {
+	flex: 1 0 auto;
+}
 
+.page-footer {
+	margin-top: auto !important;
+	flex-shrink: 0;
+}
 @media (max-width: 1024px) {
 	.about-logo {
 		z-index: 100;
