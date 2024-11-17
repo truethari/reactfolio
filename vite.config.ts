@@ -9,7 +9,7 @@ export default defineConfig({
     host: true,
   },
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.ts', '.tsx', '.js', '.jsx']
   },
   publicDir: 'public',
   build: {
@@ -19,7 +19,7 @@ export default defineConfig({
   },
   optimizeDeps: {
     entries: [
-      './src/index.jsx'
+      './src/index.tsx'
     ]
   }
 });
